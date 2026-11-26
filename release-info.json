@@ -646,8 +646,9 @@
   "brandingChange": {
     "displayOnly": true,
     "dataDirectoryChanged": false,
-    "oldLauncherRetained": true,
+    "oldLauncherRetained": false,
     "newLauncher": "启动全自动找对象流水线.cmd",
-    "isolatedUiPassed": true
+    "isolatedUiPassed": true,
+    "singleLauncher": true
   }
 }

@@ -1,7 +1,7 @@
 {
   "date": "2026-11-26",
   "productName": "全自动找对象流水线",
-  "fileCount": 313,
+  "fileCount": 312,
   "files": [
     {
       "path": ".gitattributes",
@@ -15,8 +15,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4624,
-      "sha256": "b6d6e2e600202bd3ae05f4bf347f8c127e89a428b2d53ea1c3ca7923c45d3ef1"
+      "bytes": 7014,
+      "sha256": "b5c0bdda92393b5e7de3f8ddef509fb2d7f5ffacf89ee70bd07472d52b7376b1"
     },
     {
       "path": "app-source/dist/app-icon.png",
@@ -1520,8 +1520,8 @@
     },
     {
       "path": "docs/版本说明.md",
-      "bytes": 1957,
-      "sha256": "3a1229c4a0a81a21007a573d6c765c25417785ff54076c9714c4b4cece4c9823"
+      "bytes": 1966,
+      "sha256": "77c6b1c6eb2bf0b856d5d20122aa8dd26fa39409282e0523609f6b370b7249c7"
     },
     {
       "path": "licenses/LICENSE.electron.txt",
@@ -1540,8 +1540,8 @@
     },
     {
       "path": "release-info.json",
-      "bytes": 23288,
-      "sha256": "5988a38eebe9b42c3fa680ef325c176850a5622f0fb70f200a48a890f711c488"
+      "bytes": 23317,
+      "sha256": "ed3061b4e3a99b83d1a094fbe26c297ba98a1f73a5170571f0fc7c0f0aaf81a5"
     },
     {
       "path": "runtime.json",
@@ -1560,11 +1560,6 @@
     },
     {
       "path": "启动全自动找对象流水线.cmd",
-      "bytes": 136,
-      "sha256": "c76eba3772dbc32a1c831afdb438748f0aaeb720e83eb7a0310eb84337e68398"
-    },
-    {
-      "path": "启动聊天助手.cmd",
       "bytes": 136,
       "sha256": "c76eba3772dbc32a1c831afdb438748f0aaeb720e83eb7a0310eb84337e68398"
     }
