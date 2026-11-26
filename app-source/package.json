@@ -1,0 +1,13 @@
+{
+  "name": "douyin-reply-assistant",
+  "version": "1.1.0",
+  "description": "对象、搭子、同好、学长学姐——你定目标，AI 找人开聊。",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "test": "node --test tests/*.test.cjs",
+    "build:info": "node scripts/build-info.cjs --stage=P2-15.1"
+  },
+  "type": "module",
+  "dependencies": {},
+  "productName": "全自动找对象流水线"
+}

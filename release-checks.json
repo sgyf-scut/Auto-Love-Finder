@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-26",
+  "offlineTests": {
+    "tests": 2963,
+    "pass": 2963,
+    "fail": 0,
+    "entry": "node scripts/run-tests.cjs"
+  },
+  "businessSourceMatchesCurrentFormal": true,
+  "emptyAccountStartupPassed": true,
+  "pagesChecked": [
+    "chat",
+    "train",
+    "discovery",
+    "tasks",
+    "promises",
+    "models",
+    "logs",
+    "settings"
+  ],
+  "emptyAccountState": {
+    "contacts": 0,
+    "providers": 0,
+    "candidates": 0,
+    "drafts": 0,
+    "sendHistory": 0,
+    "selfFacts": 0,
+    "selfPersona": 0,
+    "autoReply": false,
+    "draftOnly": true,
+    "companion": false,
+    "openingRequirements": "",
+    "topicNotes": ""
+  },
+  "privacyScan": {
+    "findings": 0,
+    "knownPersonalMarkers": 0,
+    "credentialPatterns": 0,
+    "realProfileUrls": 0
+  },
+  "realPlatformTestedInThisPackage": false,
+  "realModelTestedInThisPackage": false,
+  "runtimeDownloadRetested": false,
+  "runtimeVersion": "37.2.6",
+  "runtimeChecksumConfigUnchanged": true,
+  "accountDataIncluded": false,
+  "runtimeBinariesIncluded": false,
+  "gitBranch": "release/preview-2026-11-26",
+  "publicRedistributionPermissionConfirmed": false,
+  "nameChangeChecks": {
+    "date": "2026-11-26",
+    "productName": "全自动找对象流水线",
+    "syntaxPassed": true,
+    "emptyStartupPassed": true,
+    "pagesChecked": 8,
+    "smallWindowWidth": 960,
+    "overflow": false,
+    "dataDirectoryUnchanged": true,
+    "logicChanged": false,
+    "fullSuiteRerun": false,
+    "baselineTestsPassed": 2963
+  }
+}

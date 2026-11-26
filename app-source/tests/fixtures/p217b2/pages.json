@@ -1,0 +1,85 @@
+{
+  "_fixture": {
+    "name": "P2-17B.2 离线集成夹具 · 采集页",
+    "nature": "合成身份（SEC_SYN_* 为占位身份，不对应任何真实抖音账号）",
+    "note": "模拟“已登录页面读到的评论行”。只替代平台访问，不替代业务模块；行结构与 collectCommentRows 输出一致。"
+  },
+  "pages": {
+    "7300000000000000001": [
+      [
+        {
+          "commentId": "7490000000000000101",
+          "platformUserId": "SEC_SYN_0001",
+          "nickname": "合成-甲",
+          "commentText": "本人女 28岁 广州，想认识朋友",
+          "isReply": false,
+          "parentCommentId": "",
+          "replyCount": 2,
+          "ipLocation": "广东",
+          "ipLocationSource": "footer_region"
+        },
+        {
+          "commentId": "7490000000000000102",
+          "platformUserId": "SEC_SYN_0004",
+          "nickname": "合成-戊",
+          "commentText": "也想认识一下",
+          "isReply": false,
+          "parentCommentId": "",
+          "replyCount": 0,
+          "ipLocation": null,
+          "ipLocationSource": "not_present"
+        }
+      ]
+    ],
+    "7300000000000000002": [
+      [
+        {
+          "commentId": "7490000000000000201",
+          "platformUserId": "SEC_SYN_0002",
+          "nickname": "合成-乙",
+          "commentText": "好看",
+          "isReply": false,
+          "parentCommentId": "",
+          "replyCount": null,
+          "ipLocation": null,
+          "ipLocationSource": "not_present"
+        }
+      ]
+    ],
+    "7300000000000000003": [],
+    "7300000000000000004": [
+      [
+        {
+          "commentId": "7490000000000000401",
+          "platformUserId": "SEC_SYN_0004",
+          "nickname": "合成-戊",
+          "commentText": "聊天搭子报名",
+          "isReply": false,
+          "parentCommentId": "",
+          "replyCount": 1,
+          "ipLocation": "广东",
+          "ipLocationSource": "explicit_label"
+        }
+      ]
+    ],
+    "7300000000000000005": [
+      [
+        {
+          "commentId": "7490000000000000501",
+          "platformUserId": "SEC_SYN_0006",
+          "nickname": "合成-己",
+          "commentText": "想认识，男生一枚",
+          "isReply": false,
+          "parentCommentId": "",
+          "replyCount": 3,
+          "ipLocation": "江西",
+          "ipLocationSource": "footer_region"
+        }
+      ]
+    ]
+  },
+  "unavailable": {
+    "7300000000000000006": { "ok": false, "code": "COMMENTS_UNAVAILABLE", "reason": "评论区未渲染" },
+    "7300000000000000007": { "ok": false, "code": "VIDEO_NOT_FOUND", "reason": "作品不存在" }
+  }
+}

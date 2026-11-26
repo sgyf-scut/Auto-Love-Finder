@@ -1,0 +1,1572 @@
+{
+  "date": "2026-11-26",
+  "productName": "全自动找对象流水线",
+  "fileCount": 313,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 90,
+      "sha256": "78fd986c7479cdc31fcadf2ff71344566c04de5da5bdc89bdb11646e3f1af3bf"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 315,
+      "sha256": "4b42762009224166208e2b1334c1ee972157f6d71ff7baa2b3a8b5b543ece2c8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4624,
+      "sha256": "b6d6e2e600202bd3ae05f4bf347f8c127e89a428b2d53ea1c3ca7923c45d3ef1"
+    },
+    {
+      "path": "app-source/dist/app-icon.png",
+      "bytes": 286005,
+      "sha256": "469c9f67bc45c1d8ddaaff160e7dca30a3e8ce6debc3bf7622b8a82c5563c8d7"
+    },
+    {
+      "path": "app-source/dist/app.css",
+      "bytes": 8251,
+      "sha256": "b9e7d09f536f7fb9efe384edd9af14276347ac0a329c6ca0c4b07a55eadfe557"
+    },
+    {
+      "path": "app-source/dist/app.js",
+      "bytes": 466732,
+      "sha256": "48c946c32e87dbe60a7c1771396c8eb633f845764700742a1a1960159543f4ac"
+    },
+    {
+      "path": "app-source/dist/index.html",
+      "bytes": 480,
+      "sha256": "44518d504efd8d2e38b7b9eeb2cfce90863d9b6820b2038a28dcb1be1f9e7953"
+    },
+    {
+      "path": "app-source/dist/tray-icon.png",
+      "bytes": 698,
+      "sha256": "3c5db7bd08fd67384ea54558be5cfdc7f0b81b6bc444a0f25227b4fc3754846a"
+    },
+    {
+      "path": "app-source/electron/ai-service.cjs",
+      "bytes": 157561,
+      "sha256": "22bf66f4d0e7afc0c4a285fb49a315b6ff54ffa1a2a40d7c4609fe10856a2f94"
+    },
+    {
+      "path": "app-source/electron/atomic-write.cjs",
+      "bytes": 6074,
+      "sha256": "ecd8b4822780f2cec61799b4d558c4c1c9881ed49f7c255ef251975321ac5383"
+    },
+    {
+      "path": "app-source/electron/auto-friendship.cjs",
+      "bytes": 25544,
+      "sha256": "e3a8f11e5427a747d059596f4e74145569cbdf646bdf420e77a6206fb3adcc7d"
+    },
+    {
+      "path": "app-source/electron/automation.cjs",
+      "bytes": 327659,
+      "sha256": "5b7f4b25682302a26552355685474f4e9cfa0f59edaba2c42de5e4b25c3a8d3c"
+    },
+    {
+      "path": "app-source/electron/chat-core/chat-engine-router.cjs",
+      "bytes": 5405,
+      "sha256": "fa2238b8ccc86f87dfe8f2c4df0fae5a2bf570dbd74d28bdf163cbd0b48f2ce7"
+    },
+    {
+      "path": "app-source/electron/chat-core/chat-types.cjs",
+      "bytes": 6518,
+      "sha256": "867ad938644fa5abda32f6367659a96f4c18c391a7e9dd2251d5653dff240810"
+    },
+    {
+      "path": "app-source/electron/chat-core/context-builder.cjs",
+      "bytes": 11284,
+      "sha256": "84027697c372d3be8295a4258f1e6aa682d7a03b30dd7ad8d85e373178f14fb7"
+    },
+    {
+      "path": "app-source/electron/chat-core/conversation-orchestrator.cjs",
+      "bytes": 31105,
+      "sha256": "17df8588b7d552d9d3ac89510d3d06c8db176a18e3e8ba26d3eb81788d1c6a7f"
+    },
+    {
+      "path": "app-source/electron/chat-core/core-effects.cjs",
+      "bytes": 5994,
+      "sha256": "64ebdbbf8ac0741bbc71cfde34c75944d6119b93dc2b2bf9a54e362d56bc858a"
+    },
+    {
+      "path": "app-source/electron/chat-core/model-provider-port.cjs",
+      "bytes": 5048,
+      "sha256": "4ff94de1fe49241860f9647a270e5376889b90e0b4a3b4603366cd84579226c6"
+    },
+    {
+      "path": "app-source/electron/chat-core/safety-guard.cjs",
+      "bytes": 798,
+      "sha256": "0e13f42c0810560a661e8b4b017ef5c03c4712392215d58a3d05640319db0527"
+    },
+    {
+      "path": "app-source/electron/chat-engines/legacy/engine.cjs",
+      "bytes": 3198,
+      "sha256": "30350c98b330d978ec4d8a27b56831456fa0e32cb74a8002544de173417b96bb"
+    },
+    {
+      "path": "app-source/electron/chat-engines/legacy/event-reply.cjs",
+      "bytes": 2537,
+      "sha256": "b2d23ff4655f78fad7a41a2f8a91122bb980c83137ba605d41dd7740276ef3f8"
+    },
+    {
+      "path": "app-source/electron/chat-engines/legacy/mature-reply.cjs",
+      "bytes": 15710,
+      "sha256": "84c5c43818a172143e217266e9a04654764982a08b2ddaa63e2bb7f921c53d23"
+    },
+    {
+      "path": "app-source/electron/chat-engines/legacy/relationship-reply.cjs",
+      "bytes": 4613,
+      "sha256": "72b3e2450fe43a6c6f0124f1d78e96fab3233189841ac9587ae5d437a2eddf00"
+    },
+    {
+      "path": "app-source/electron/chat-engines/simple-v3/README.md",
+      "bytes": 1728,
+      "sha256": "774467679cf114ed9e83d9e05ddaed825673505d3fdcc173d9f2674fd6b8755f"
+    },
+    {
+      "path": "app-source/electron/chat-engines/simple-v3/config.cjs",
+      "bytes": 1367,
+      "sha256": "d62a4a8de8a8b8fcd439a53e967f7a7443db0cd5c9595dfe1c36cf6467748a63"
+    },
+    {
+      "path": "app-source/electron/chat-engines/simple-v3/engine.cjs",
+      "bytes": 2123,
+      "sha256": "3b72f227041cdcd38734e35d9e5eae4e67804850ed232f0fefa164b3e632051a"
+    },
+    {
+      "path": "app-source/electron/chat-engines/simple-v3/parser.cjs",
+      "bytes": 4214,
+      "sha256": "17cba84d1b3658948ea188053dcb43f48f004b73e7eb01c67d4b1869ed938431"
+    },
+    {
+      "path": "app-source/electron/chat-engines/simple-v3/prompt.cjs",
+      "bytes": 7633,
+      "sha256": "9729e2ab6dfb8f5b5ef5d7e5f4e35d1796d71c4f27e257c2d275ed75e3f1762d"
+    },
+    {
+      "path": "app-source/electron/chat-window-coordinator.cjs",
+      "bytes": 3667,
+      "sha256": "0f1063b03666ebec3f908afe1ee0b261e209a52fc4d651941d3f52c59ac40099"
+    },
+    {
+      "path": "app-source/electron/confirmed-greeting.cjs",
+      "bytes": 2052,
+      "sha256": "12b570d981e69605058a95f11a5588e4a2c8bee28f593c4ce60580071b159ec6"
+    },
+    {
+      "path": "app-source/electron/contact-engine.cjs",
+      "bytes": 38699,
+      "sha256": "dc04e3e37174946646e6af99bfd0b19664783515c985f15d9b75655a13e596af"
+    },
+    {
+      "path": "app-source/electron/contact/action-adapter.cjs",
+      "bytes": 6455,
+      "sha256": "a2d5fd34f5b671934782dc2681c3a7c35e08e9f5b554016d4d117afb6f0891e5"
+    },
+    {
+      "path": "app-source/electron/contact/action-gate.cjs",
+      "bytes": 12806,
+      "sha256": "f38a75b5351109efbb555cf0408a87234acf9e7c0069941d38516ac10075406f"
+    },
+    {
+      "path": "app-source/electron/conversation-engine.cjs",
+      "bytes": 13346,
+      "sha256": "1287910b5a01484690780f0f8be520ffb9ee55499e0f3e713c93a253e8af2c64"
+    },
+    {
+      "path": "app-source/electron/conversation-modes.cjs",
+      "bytes": 1862,
+      "sha256": "6f17d9ae35190da86dd7f88ab3ce66489945288e09af913873795d9ec8555c91"
+    },
+    {
+      "path": "app-source/electron/conversation-sync.cjs",
+      "bytes": 20421,
+      "sha256": "f3526ad9a828c0972a3fd55ecdcc2b7c0361b9d15cd48fd65efb4b31967e7bed"
+    },
+    {
+      "path": "app-source/electron/discovery/auto-contact.cjs",
+      "bytes": 37152,
+      "sha256": "a4159356d871215af74698b850627d663bd58854795c429746a6dcf2b025079e"
+    },
+    {
+      "path": "app-source/electron/discovery/batch-contact-service.cjs",
+      "bytes": 6248,
+      "sha256": "45bf304a7f222cd5cd6f3f11d9f479bcf96a97d06869c7ddc7c77eec0de0fa56"
+    },
+    {
+      "path": "app-source/electron/discovery/batch-contact.cjs",
+      "bytes": 14702,
+      "sha256": "5138c3edeeb99bb5adae20f080443fd63074854516837dd971506ae74f642bd5"
+    },
+    {
+      "path": "app-source/electron/discovery/batch-filter.cjs",
+      "bytes": 6326,
+      "sha256": "834a9cd3fde4091ab7f43d677ee8545c6b5da316f9c90bae857274be911dd7b4"
+    },
+    {
+      "path": "app-source/electron/discovery/batch-runner.cjs",
+      "bytes": 90255,
+      "sha256": "03938a92fe58f9484daa3ba9de54069bcaa6df93e7a22a392e84057cdb159f73"
+    },
+    {
+      "path": "app-source/electron/discovery/candidate-audit.cjs",
+      "bytes": 21962,
+      "sha256": "797e432704f6a6966400fc615df3fa3272b2c01486d91eaa4194b5e4ced7b0fa"
+    },
+    {
+      "path": "app-source/electron/discovery/candidate-brain.cjs",
+      "bytes": 7865,
+      "sha256": "5d0315f4277f4f0655f9236c77ae46789cb11c0427db5d323c865a2142f83c45"
+    },
+    {
+      "path": "app-source/electron/discovery/candidate-manager.cjs",
+      "bytes": 34077,
+      "sha256": "2d774817895bba4ce7afa03bb3e88acf9859e067da1a4966e997ede6ff57afbe"
+    },
+    {
+      "path": "app-source/electron/discovery/classification-retry.cjs",
+      "bytes": 466,
+      "sha256": "6753c5919e87a616bc08cba98967829c6c84bf000e43a5d9e45849fb318cae37"
+    },
+    {
+      "path": "app-source/electron/discovery/collection-outcome.cjs",
+      "bytes": 6965,
+      "sha256": "6ae4b85b8555e85c661a5700f4ca09e8192d9e644bc92f70d195d5a8f86cc339"
+    },
+    {
+      "path": "app-source/electron/discovery/comment-collection-service.cjs",
+      "bytes": 47273,
+      "sha256": "63c5dfe3a16040b868846bd5491f1035462ba67bd0586c03d9360c31ffc1eee0"
+    },
+    {
+      "path": "app-source/electron/discovery/comment-snapshot.cjs",
+      "bytes": 38291,
+      "sha256": "30e55100071ff0db4c76e0bacb7d68721eed12b701cc7b8f1ef584f291b12f3b"
+    },
+    {
+      "path": "app-source/electron/discovery/custom-goals.cjs",
+      "bytes": 10810,
+      "sha256": "f09147cffe3d0392adc6abee497a06ccb5dd84eee29c45be861b7674791d16d5"
+    },
+    {
+      "path": "app-source/electron/discovery/discovery-engine.cjs",
+      "bytes": 25989,
+      "sha256": "61a5151b7b5e8cb95bd35626e0313ab9d3badbbd0266b31ee6c4c549a7a72c4b"
+    },
+    {
+      "path": "app-source/electron/discovery/discovery-lists.cjs",
+      "bytes": 6918,
+      "sha256": "a69ee8a5e620dda93a8b50e13f18fad749054988240c88c26a2bcc2aea30b44c"
+    },
+    {
+      "path": "app-source/electron/discovery/discovery-pipeline.cjs",
+      "bytes": 32371,
+      "sha256": "1c1e39d5ee6b2a2ac27a09c05dba3f92569b195e784e87b2d3185b16c237bf4e"
+    },
+    {
+      "path": "app-source/electron/discovery/discovery-scheduler.cjs",
+      "bytes": 21711,
+      "sha256": "ef1c4e67b17f35c8c2fe5037882a6f1fa8bce49de25ae1793e1ebfff46fecbc4"
+    },
+    {
+      "path": "app-source/electron/discovery/douyin-link.cjs",
+      "bytes": 3057,
+      "sha256": "091a01cf1de624865db6918856ab6812112e907d7041ad9492996fdcb967a5da"
+    },
+    {
+      "path": "app-source/electron/discovery/favorites-operation.cjs",
+      "bytes": 2379,
+      "sha256": "3ac2ce6d725613228d04cdfd1b1ddeb82ba5b4272d59ada047087426b26cd511"
+    },
+    {
+      "path": "app-source/electron/discovery/favorites-snapshot.cjs",
+      "bytes": 15738,
+      "sha256": "4ccc36624edbb84456891f49dd42e78c793d19846b1327a8d6f20ff8dae3d480"
+    },
+    {
+      "path": "app-source/electron/discovery/favorites-sync.cjs",
+      "bytes": 23572,
+      "sha256": "d0a0cf117386048fd732ce33aaa5dad029c86fff78a5faa380741ca8215bb35f"
+    },
+    {
+      "path": "app-source/electron/discovery/gender-glyph.cjs",
+      "bytes": 3194,
+      "sha256": "6f9707084db1a5424cd20148df3f3d637c68f3fd2714259128aed47b6d640fa5"
+    },
+    {
+      "path": "app-source/electron/discovery/library-classify-bridge.cjs",
+      "bytes": 2264,
+      "sha256": "87be35fddf32e3c85198ffb6759d21a7cd407e4f92d696efd883cf5f5eebf503"
+    },
+    {
+      "path": "app-source/electron/discovery/page-readiness.cjs",
+      "bytes": 6411,
+      "sha256": "1ada6980d935e940ea5acbff03bfc077cdaa4b12d43e9322d623af33d09b54d3"
+    },
+    {
+      "path": "app-source/electron/discovery/profile-facts.cjs",
+      "bytes": 14013,
+      "sha256": "45f211b5f411a5baec8bcdc3ff56600b8e0fd7cab9a00854edbe6f37889862c6"
+    },
+    {
+      "path": "app-source/electron/discovery/profile-navigation-tools.cjs",
+      "bytes": 910,
+      "sha256": "a8dd75801d689433ade823a2c5496e992f6e15ca72d86c4d26a1d3ebdd34413f"
+    },
+    {
+      "path": "app-source/electron/discovery/profile-navigator.cjs",
+      "bytes": 15333,
+      "sha256": "705165dce1e56eab6b901db94873c9d058c9a8979eada6402e2ee1bb884a411a"
+    },
+    {
+      "path": "app-source/electron/discovery/profile-reader.cjs",
+      "bytes": 9795,
+      "sha256": "2429ebc946c275798602cf9874e0a5fc0fc0eaecc4f0a62462a3cf1ede1d6ed9"
+    },
+    {
+      "path": "app-source/electron/discovery/profile-trace.cjs",
+      "bytes": 5250,
+      "sha256": "7b4b8d1ae72238841b5684418369f8683bfe1e8bdf098905296cb56f92c57185"
+    },
+    {
+      "path": "app-source/electron/discovery/public-age.cjs",
+      "bytes": 1785,
+      "sha256": "c68447bb534fe3eb95d63f65c61d7349f78d65ea6e69c0f0479641910ae1c9ed"
+    },
+    {
+      "path": "app-source/electron/discovery/reply-reader.cjs",
+      "bytes": 8210,
+      "sha256": "25d37743b5d9fe3e747444127f70f757176a8cba52cbb7ab065e1b4fb43ebbd9"
+    },
+    {
+      "path": "app-source/electron/discovery/requirements-parser.cjs",
+      "bytes": 3654,
+      "sha256": "51c8b96b8782fe3c0ec9071e37f3caf1e2e09e929622bd52856c692312fcfb8b"
+    },
+    {
+      "path": "app-source/electron/discovery/search-query.cjs",
+      "bytes": 1862,
+      "sha256": "f73e7243ab484cf53014b6c3770ad721a888451efe240217b4407443341c1262"
+    },
+    {
+      "path": "app-source/electron/discovery/search-topics.cjs",
+      "bytes": 3428,
+      "sha256": "5850643816335fa6faa08c5eabbecd5c13dd00d9ee90bef202b05e86e4686610"
+    },
+    {
+      "path": "app-source/electron/discovery/selection-policy.cjs",
+      "bytes": 798,
+      "sha256": "237dd6fbeb863df412999344340202b0e7436c20baa0204641d1b33ccf3ecdf6"
+    },
+    {
+      "path": "app-source/electron/discovery/verification-dom.cjs",
+      "bytes": 3165,
+      "sha256": "a4d2ea23d6208e34ecca51c79cb5504104055c5aa3687c50bb7939b12cebd131"
+    },
+    {
+      "path": "app-source/electron/discovery/verification-gate.cjs",
+      "bytes": 1387,
+      "sha256": "d1c04672db856f235f638dfc40944f7d88f04dcc535ccbe0d89533855a2a1ffd"
+    },
+    {
+      "path": "app-source/electron/discovery/video-comment-count.cjs",
+      "bytes": 1985,
+      "sha256": "79c5459a8178115443ab6828291ff1483a4f0c3187b362191426f0a9d637b919"
+    },
+    {
+      "path": "app-source/electron/discovery/video-rounds.cjs",
+      "bytes": 4704,
+      "sha256": "dbc50ebb25c8fcd2cdad27a106d91ace5fb3b9e927ec06a614e09a0a61c1f928"
+    },
+    {
+      "path": "app-source/electron/discovery/video-sources.cjs",
+      "bytes": 22889,
+      "sha256": "81e5a106ef5f2c8857259d865fc14a069ac32f03954b9d183b105f42d554f891"
+    },
+    {
+      "path": "app-source/electron/expression-batch.cjs",
+      "bytes": 5055,
+      "sha256": "6deee512b22f404e33ce5ce7a80ba8439856f63b83d526f3e169bc77c0d0bd5e"
+    },
+    {
+      "path": "app-source/electron/friendship.cjs",
+      "bytes": 56208,
+      "sha256": "74c2a02046ce784ee903ad3bb74971a7624ec5d9639b33c5080a9f633d968d53"
+    },
+    {
+      "path": "app-source/electron/main.cjs",
+      "bytes": 177884,
+      "sha256": "db2912ad754eb1abf7b288c5c3fa0d5dea9bace5fd4c424f069b31b729ed7703"
+    },
+    {
+      "path": "app-source/electron/manual-verification.cjs",
+      "bytes": 1568,
+      "sha256": "c5c17353ce205a4d2e56ef78d34accb72aba82d1574f5dfd5ab5fa66b7b05031"
+    },
+    {
+      "path": "app-source/electron/message-editor.cjs",
+      "bytes": 8108,
+      "sha256": "94a31ccccc3813085d8b22e1c20fd4a810ebb9112134e275283925604e703795"
+    },
+    {
+      "path": "app-source/electron/navigation-policy.cjs",
+      "bytes": 2046,
+      "sha256": "a5359a820f41c2026149454a90a8aa16c330c38dfdd810432eaaed7d65f0d535"
+    },
+    {
+      "path": "app-source/electron/nickname-identity.cjs",
+      "bytes": 7687,
+      "sha256": "8de4614e38c075cbbb0e7ea16342d3e75fcdadd5deed545146012a2b5e38dbe3"
+    },
+    {
+      "path": "app-source/electron/opening-requirements.cjs",
+      "bytes": 962,
+      "sha256": "1bba8b8f542c3fb340f8b28aace5eae7f069f5b1e70236e1a17b607995a054e8"
+    },
+    {
+      "path": "app-source/electron/p122-test-mode.cjs",
+      "bytes": 6931,
+      "sha256": "ec44102502a23551176efaf7f45a52d58b3c523b68ae2cdb51a98ccb06fbe761"
+    },
+    {
+      "path": "app-source/electron/preload.cjs",
+      "bytes": 16573,
+      "sha256": "347181391995f755acf30e87498804b73a472503e12f87861ddb2a9984a5bb44"
+    },
+    {
+      "path": "app-source/electron/providers-store.cjs",
+      "bytes": 1905,
+      "sha256": "9d5f9cb1ce9fe63080abe1e580543efdf9df571d66700d2f6aa7c40b95923d09"
+    },
+    {
+      "path": "app-source/electron/social-brain/comment-classifier.cjs",
+      "bytes": 14254,
+      "sha256": "126d84fa6475552db4ba0fc6e198cd53879dd39291ef8da284c278875dd16f39"
+    },
+    {
+      "path": "app-source/electron/social-brain/comment-collector.cjs",
+      "bytes": 18087,
+      "sha256": "add1f4743719b4f92e5819c41de22546d3aa58c9260ba1958c18dfc9595db4a6"
+    },
+    {
+      "path": "app-source/electron/social-brain/comment-learning-runner.cjs",
+      "bytes": 9346,
+      "sha256": "e6f69a616313c30a7c78b03c43f4d1dd2e2bd497b6fcd2176ffd732fef9a6259"
+    },
+    {
+      "path": "app-source/electron/social-brain/comment-learning.cjs",
+      "bytes": 33862,
+      "sha256": "4360e6773f75da991fc6ff3e7586b5715e451731b3f7fd424b6b81d7ba3046c8"
+    },
+    {
+      "path": "app-source/electron/social-brain/contact-origin.cjs",
+      "bytes": 8609,
+      "sha256": "25acec3f690ce2fd9a0478754cc99dd11104a3bf0e8d6090c30c2968ebd1ae0a"
+    },
+    {
+      "path": "app-source/electron/social-brain/context-builder.cjs",
+      "bytes": 34395,
+      "sha256": "e504230dbf524cee601fbee740ce734c80ad90a7426beb495250789e065a8070"
+    },
+    {
+      "path": "app-source/electron/social-brain/conversation-attention.cjs",
+      "bytes": 20898,
+      "sha256": "bf9470c4e9c98388d038f99d2deb227a826aac52e2213c7442c52e022d4882e6"
+    },
+    {
+      "path": "app-source/electron/social-brain/conversation-buffer.cjs",
+      "bytes": 9834,
+      "sha256": "0546422adeabd5a55d89fadf0d127c47cbb5eb80b148949ce5853437cd8929ee"
+    },
+    {
+      "path": "app-source/electron/social-brain/conversation-momentum.cjs",
+      "bytes": 11839,
+      "sha256": "8f080bafcc9c2d8a3b7fe4a1d01ff90ab496029cecbad8616e1a7e424ff790b5"
+    },
+    {
+      "path": "app-source/electron/social-brain/conversation-planner.cjs",
+      "bytes": 31391,
+      "sha256": "88c661fc42549b05526484398fca2c5326cb63aa0626e33b9f223406d4b7e243"
+    },
+    {
+      "path": "app-source/electron/social-brain/conversation-state.cjs",
+      "bytes": 22587,
+      "sha256": "8b7e3898eaa2d0e878d85861e31bd3b287f22d8e85e71c9dafc311a07f7dfa9d"
+    },
+    {
+      "path": "app-source/electron/social-brain/disclosure-policy.cjs",
+      "bytes": 13293,
+      "sha256": "f732eb2b194405351428e7962f11a63de69dca86bacc3de2c2cb3eb90ed77104"
+    },
+    {
+      "path": "app-source/electron/social-brain/expression-planner.cjs",
+      "bytes": 9992,
+      "sha256": "ce00b1b803314b25cad52c4866b90df4493544c19749068466e15e525f9401b1"
+    },
+    {
+      "path": "app-source/electron/social-brain/first-contact.cjs",
+      "bytes": 7659,
+      "sha256": "e983b7f1ce1a9892037c042bc92bffe1a481037ab03bc43539ae811ba0a817d0"
+    },
+    {
+      "path": "app-source/electron/social-brain/incoming-burst.cjs",
+      "bytes": 4819,
+      "sha256": "63affbc6678f0ee9dcd01678a4714a5230c5717a770039090d337c2cfcece713"
+    },
+    {
+      "path": "app-source/electron/social-brain/library-benchmark.cjs",
+      "bytes": 21268,
+      "sha256": "6adac1385c588b5164b0719adfd6fcc78edee782d38243e39f9ac803ef107037"
+    },
+    {
+      "path": "app-source/electron/social-brain/library-candidates.cjs",
+      "bytes": 14203,
+      "sha256": "e8e8f0019019061ab961eebacfea8778d78be7b574015724a50c476aa9f50776"
+    },
+    {
+      "path": "app-source/electron/social-brain/library-classifier.cjs",
+      "bytes": 20174,
+      "sha256": "b5aa3ac3822558d506e21d26bc27dad42f02465fdfd6140f5da13f513f003357"
+    },
+    {
+      "path": "app-source/electron/social-brain/library-store.cjs",
+      "bytes": 63535,
+      "sha256": "da5acc81dcceff696a53b80f53882c48954ebe4287c774bdb6d7a2b10f746d63"
+    },
+    {
+      "path": "app-source/electron/social-brain/media-interpreter.cjs",
+      "bytes": 12123,
+      "sha256": "0535870758db82e84bd733b50772409fd08e791577eff00783ba23ab77d19b9b"
+    },
+    {
+      "path": "app-source/electron/social-brain/memory-manager.cjs",
+      "bytes": 34867,
+      "sha256": "5414c4a2d03ac8b9880a108709dc59b77b83c289a08871747fdc9711171c3bd8"
+    },
+    {
+      "path": "app-source/electron/social-brain/message-interpreter.cjs",
+      "bytes": 1999,
+      "sha256": "bedac931bcb245224b72bc141dcf0ec3beefbc684b575edc8bb6ea730e251d9c"
+    },
+    {
+      "path": "app-source/electron/social-brain/new-friend-context.cjs",
+      "bytes": 10686,
+      "sha256": "93c3bd07762f5ee4b540e929095ffa8289584e6f3245383a600bb8a0b73cb7df"
+    },
+    {
+      "path": "app-source/electron/social-brain/persona-lens.cjs",
+      "bytes": 7180,
+      "sha256": "ee099cd7011a851612d723e004110327fc792c1951678ff36b7f700936922c80"
+    },
+    {
+      "path": "app-source/electron/social-brain/proactive-engine.cjs",
+      "bytes": 18436,
+      "sha256": "6e17909bd46c10d7e703e6d8e5f14c1a5fda6f1ce43d5d9096a5c66163a6fd8a"
+    },
+    {
+      "path": "app-source/electron/social-brain/promise-extractor.cjs",
+      "bytes": 11740,
+      "sha256": "7abe8c13c377a16a37b966aa912d1f7165a4db1c8d8e395af1a95f37bec2547e"
+    },
+    {
+      "path": "app-source/electron/social-brain/promise-result-extractor.cjs",
+      "bytes": 4070,
+      "sha256": "4a40677deafd6632cac2504a03d6f0a6ba1717171c12938fcd823289cd965647"
+    },
+    {
+      "path": "app-source/electron/social-brain/promise-retriever.cjs",
+      "bytes": 3216,
+      "sha256": "8221ca0242b31e26ce6f188423dc7f5e75814749640cdf6ccc1cfdf3d0c8310e"
+    },
+    {
+      "path": "app-source/electron/social-brain/promise.cjs",
+      "bytes": 11519,
+      "sha256": "7fcf1c91c6fa80c8ba0778a158b74766005a4bfe57165fd2359ace5b6b18a10e"
+    },
+    {
+      "path": "app-source/electron/social-brain/relationship-journey.cjs",
+      "bytes": 27540,
+      "sha256": "73a20b196710513d0a72eb732813372aa8a8dc41f58cc6ea9461412c2f6c3cd8"
+    },
+    {
+      "path": "app-source/electron/social-brain/relationship-state.cjs",
+      "bytes": 7094,
+      "sha256": "ba377f8d66f26736005f3f0503db0e31e366c117807b4cb86b978aa60851ff38"
+    },
+    {
+      "path": "app-source/electron/social-brain/reply-retriever.cjs",
+      "bytes": 8076,
+      "sha256": "23a9e935e6afce7bf8ac4484407d9306c70d6a19b0feeed3757a9e50e8418ce1"
+    },
+    {
+      "path": "app-source/electron/social-brain/reply-writer.cjs",
+      "bytes": 18432,
+      "sha256": "b3e73a6317595b97705ba7ac902ff901498e17517b8c47248258bf690d7662c6"
+    },
+    {
+      "path": "app-source/electron/social-brain/self-narrative-extractor.cjs",
+      "bytes": 7784,
+      "sha256": "b98bdb3bdc9ab7ccfe8a6cdff57e9ae25d815a581a07812d98ebf2dc24ca31ee"
+    },
+    {
+      "path": "app-source/electron/social-brain/self-narrative-retriever.cjs",
+      "bytes": 2667,
+      "sha256": "2253523ac7f409c1212fcebf8c044019a67c20edb51c1a928cd8c99bba7708c9"
+    },
+    {
+      "path": "app-source/electron/social-brain/self-narrative.cjs",
+      "bytes": 8452,
+      "sha256": "b61587471946086576f44f34177dfdfab90c011de88cb768b455da326c95ad9e"
+    },
+    {
+      "path": "app-source/electron/social-brain/self-profile-extractor.cjs",
+      "bytes": 6242,
+      "sha256": "afab0330e65083846a70ca4385cc3935becc68f7d6b7e4016a82fbb1a696c3ac"
+    },
+    {
+      "path": "app-source/electron/social-brain/self-profile.cjs",
+      "bytes": 12308,
+      "sha256": "67bbce2c0c8a0b0c9c57cfc9fd813d3010edc21e4a7234f1a02535683a12a7c9"
+    },
+    {
+      "path": "app-source/electron/social-brain/shared-memory-extractor.cjs",
+      "bytes": 17530,
+      "sha256": "03542b5c59a1982237ea395cb026fb1565aff8dbe096edea9d3e108cb5d7032f"
+    },
+    {
+      "path": "app-source/electron/social-brain/shared-memory-retriever.cjs",
+      "bytes": 2451,
+      "sha256": "5983d6759417037ed579aa67614debd51685dbf57ecf578dc7e7caf3f18f4dc0"
+    },
+    {
+      "path": "app-source/electron/social-brain/shared-memory.cjs",
+      "bytes": 13582,
+      "sha256": "4602587748917f61c6059db471114e9bd6b56d41f3159d2cc39d725fb55cddf7"
+    },
+    {
+      "path": "app-source/electron/social-brain/sticker-slots.cjs",
+      "bytes": 560,
+      "sha256": "02023c66d2c62a9d35e2da6fff11af79a7a2885537e239c1efee5762677b1af7"
+    },
+    {
+      "path": "app-source/electron/sticker-sender.cjs",
+      "bytes": 9974,
+      "sha256": "2207f183e134058054ce3afc8632cf192e2c2849986a151974c9dfd332c283b1"
+    },
+    {
+      "path": "app-source/electron/storage.cjs",
+      "bytes": 18084,
+      "sha256": "573b824c78f580f428ebd26910641f27840132290719ee4f5dcb46b2bc5d9d7b"
+    },
+    {
+      "path": "app-source/electron/update-service.cjs",
+      "bytes": 2790,
+      "sha256": "9ccfb5b9104c736af72acbd2f7e5468e436ae081ec5481906204d55fe301a1f3"
+    },
+    {
+      "path": "app-source/electron/video-openings.cjs",
+      "bytes": 13911,
+      "sha256": "714b8de61f9381eda2b6bba092c0b10f183accf64c8340041ddbcfbe1e7f44f3"
+    },
+    {
+      "path": "app-source/package.json",
+      "bytes": 409,
+      "sha256": "2a3fdb2cf010c7195b43043e1c6f4e6b72a47bae59dcc10c4731f76f33992ed4"
+    },
+    {
+      "path": "app-source/scripts/build-info.cjs",
+      "bytes": 3866,
+      "sha256": "6dd3a481b343f3cec12070f97f887f3d08a7764017abbe9f7487e00a6e2ec8eb"
+    },
+    {
+      "path": "app-source/tests/01-turn-machine.test.cjs",
+      "bytes": 5612,
+      "sha256": "c48e985f1c7ef187fa52adff6e9b5e792cd5c163f0bea482c4257352c0b0fd6b"
+    },
+    {
+      "path": "app-source/tests/02-context-weight.test.cjs",
+      "bytes": 6032,
+      "sha256": "2d7e50c4de360f5261f80bdda79a6e7f8df7d47cd5d83b2035c8ef008e9972fe"
+    },
+    {
+      "path": "app-source/tests/03-quality-gates.test.cjs",
+      "bytes": 7575,
+      "sha256": "56494e63fe964bbfde5d74a417b9bee071ced7fac182b5c3552eb6da5e116d1d"
+    },
+    {
+      "path": "app-source/tests/04-draft-pipeline.test.cjs",
+      "bytes": 28392,
+      "sha256": "4d4739fb825b8eb42b52e25f2068d9f472b22dff002df73f42c8c0b0c2364e47"
+    },
+    {
+      "path": "app-source/tests/05-storage-migration.test.cjs",
+      "bytes": 8566,
+      "sha256": "d7c84d0896c5b1faacb01405e01f8525ce569b7b3de7d18149452ea83158eb48"
+    },
+    {
+      "path": "app-source/tests/06-automation-helpers.test.cjs",
+      "bytes": 4883,
+      "sha256": "75ff26cafc5bdd788506ceac6e88f0c1bcca4851d5d1b497d844577c429d762d"
+    },
+    {
+      "path": "app-source/tests/07-turnflow.test.cjs",
+      "bytes": 7096,
+      "sha256": "59d644cc516937c9ef3b2cd66fbe5a5cc39b588dce87d36c88ca472124c54f05"
+    },
+    {
+      "path": "app-source/tests/08-train.test.cjs",
+      "bytes": 2768,
+      "sha256": "8abda110822395df0f34149c1a8906f78b96288e45869beac650ef3237b39924"
+    },
+    {
+      "path": "app-source/tests/09-memory-hygiene.test.cjs",
+      "bytes": 9157,
+      "sha256": "28bc9cf0bd4b21999954d00bfdccd799e760c411bfc8e21b289bde7a21e6c2fb"
+    },
+    {
+      "path": "app-source/tests/10-baseurl-normalize.test.cjs",
+      "bytes": 4313,
+      "sha256": "4f7e13e3fef736ea6dbf6161e38b1692ca72beba2b19c5690515bdfe24246fb5"
+    },
+    {
+      "path": "app-source/tests/100-chat-context.test.cjs",
+      "bytes": 14014,
+      "sha256": "8dc0b67b2601589c838ad1fea7f6947d6cfbbb16498d9180e2913b29a473c057"
+    },
+    {
+      "path": "app-source/tests/101-v30-legacy-equivalence.test.cjs",
+      "bytes": 12921,
+      "sha256": "6f6a014fd5cfe5f7c47cb5ff8b2610f57b24f425b2a479fb661ba483be0ee515"
+    },
+    {
+      "path": "app-source/tests/102-chat-engine-safety.test.cjs",
+      "bytes": 12334,
+      "sha256": "b12330ac0b321e4a27a7c0c64fec33ea9010bc2fdf516229ff4d6e451f124180"
+    },
+    {
+      "path": "app-source/tests/103-simple-v3-engine.test.cjs",
+      "bytes": 23484,
+      "sha256": "19cfaee773fa324131139384563af04452e74987d0f180c945a510df2b94faf4"
+    },
+    {
+      "path": "app-source/tests/104-self-narrative.test.cjs",
+      "bytes": 10106,
+      "sha256": "8db4f842576f3cc1bc4094b3138e32aa03e6128b2d7916a33611c716134d62a7"
+    },
+    {
+      "path": "app-source/tests/104-send-order-resilience.test.cjs",
+      "bytes": 16111,
+      "sha256": "7f55564bc85cf8ec48be8014dc525486ffec87aa83913dc7ea4f8370cdcfdc18"
+    },
+    {
+      "path": "app-source/tests/105-promise.test.cjs",
+      "bytes": 8085,
+      "sha256": "e164c8d07645ccbc345c6eaf65ba9c61b0e8041f3154c6720e3759b2bfd7dfe1"
+    },
+    {
+      "path": "app-source/tests/106-promise-writeback.test.cjs",
+      "bytes": 5680,
+      "sha256": "4b8d8ba8de926552b187f773875a99c9ea4ce9875322a6f7c2adad4c5fd40030"
+    },
+    {
+      "path": "app-source/tests/107-promise-recall.test.cjs",
+      "bytes": 5760,
+      "sha256": "fa94640b0de5df6f1176afeaa97ca79435a7cd0f0edb6f9a6e45afd5c3e36bf6"
+    },
+    {
+      "path": "app-source/tests/108-v32-acceptance.test.cjs",
+      "bytes": 4611,
+      "sha256": "c5859c3586de7f7363ec25a3d68adeb684029097e4e75022a9a8efe463afc059"
+    },
+    {
+      "path": "app-source/tests/109-promise-agreement.test.cjs",
+      "bytes": 7940,
+      "sha256": "aab5f445a7ce88ffff958b1514115ac4e30e1b5fb27a1aebc343d37fcb160a01"
+    },
+    {
+      "path": "app-source/tests/11-fetch-models.test.cjs",
+      "bytes": 5615,
+      "sha256": "645544887cbaee564cebc7545519606fdc08e69b87dcce6125320120f8c61699"
+    },
+    {
+      "path": "app-source/tests/110-history-dedup.test.cjs",
+      "bytes": 9186,
+      "sha256": "7481bfc877beb75789bed495de5de0c2357abd7a5038358ad5f0d095cbde3a35"
+    },
+    {
+      "path": "app-source/tests/111-p212-benchmark-scheduler.test.cjs",
+      "bytes": 31345,
+      "sha256": "57cc8a2c0a0ee34266cf65e018d72064f4a5a102adda6432a00f9276f43e9c9a"
+    },
+    {
+      "path": "app-source/tests/112-p213-dualmode-auto-contact.test.cjs",
+      "bytes": 14833,
+      "sha256": "5d2d235398387b2a0b9875e2479688abd117ddb1af07331ca759defa3f712a5d"
+    },
+    {
+      "path": "app-source/tests/113-p214-acceptance.test.cjs",
+      "bytes": 14059,
+      "sha256": "642f4c6696cc128230ff1867873b7b1610b668227e8c30d4006e6e2ddf0e5015"
+    },
+    {
+      "path": "app-source/tests/114-p214-stability.test.cjs",
+      "bytes": 7039,
+      "sha256": "8c2847dff4335631c15f8fa650c427cc24920e1828f5d51ed9a8764befba5233"
+    },
+    {
+      "path": "app-source/tests/115-p215-action-gate.test.cjs",
+      "bytes": 9176,
+      "sha256": "773320a66fa228cee5e10c769ed8188ba7c1e8bb43d63ebb649522800bc260ec"
+    },
+    {
+      "path": "app-source/tests/116-p215-status.test.cjs",
+      "bytes": 7582,
+      "sha256": "54997834b650596f95d1f900fa643ee3584b1d3fac5a0ace047bd7ead612c87e"
+    },
+    {
+      "path": "app-source/tests/117-p215-atomic-write.test.cjs",
+      "bytes": 3709,
+      "sha256": "008f35fd3f467d9777d656615e86ea0994405e79039814b558459c64b2eb095c"
+    },
+    {
+      "path": "app-source/tests/118-p2151-evidence.test.cjs",
+      "bytes": 12606,
+      "sha256": "fbc4594e43f27bcd358a9b8e5d772d864f92b51729d2e5644351daa1a74cd1d3"
+    },
+    {
+      "path": "app-source/tests/119-p216-uncertain.test.cjs",
+      "bytes": 10704,
+      "sha256": "a7e8d263ec1146236453cafa285e824492e13311ae1b3ed7fa5bc7267dabb080"
+    },
+    {
+      "path": "app-source/tests/12-message-queue.test.cjs",
+      "bytes": 14708,
+      "sha256": "8e4234f0b13a3de4e04eeada5a884a82f8d74a1bad843bd7ef97e5b5eb5bccaf"
+    },
+    {
+      "path": "app-source/tests/120-p216-filter.test.cjs",
+      "bytes": 5152,
+      "sha256": "1ea5aeac51b86660f4ea6b23877f9714fc8135191407c84c30d5ba79fc4f5bc8"
+    },
+    {
+      "path": "app-source/tests/121-p216-blind-review.test.cjs",
+      "bytes": 3148,
+      "sha256": "0447b6c320b3a7d45d27a4bddf35411caa97e7d8f3b1aa2654ead0b95a68ec6b"
+    },
+    {
+      "path": "app-source/tests/122-p2161-profile-facts.test.cjs",
+      "bytes": 6562,
+      "sha256": "edefa7848bcdaa7c92c42e2db43ea0a6ac12bb7527acdb5b3a8ba95fddaee9d7"
+    },
+    {
+      "path": "app-source/tests/123-p2161-fact-display.test.cjs",
+      "bytes": 5442,
+      "sha256": "92cfc202e0d6ed30f8b0295a278b3eabbcb6490b069c62f05b65ea768b32d847"
+    },
+    {
+      "path": "app-source/tests/124-p217b-batch.test.cjs",
+      "bytes": 17320,
+      "sha256": "d823be773044d6995f5c18853a67905a1b40d2df21c63b9603d95565c5a8f8f1"
+    },
+    {
+      "path": "app-source/tests/125-p217b2-offline-integration.test.cjs",
+      "bytes": 54353,
+      "sha256": "9c91f1db674040a97d6549cd69ed32a684ce08589f0e99f586498ca9fe0695ac"
+    },
+    {
+      "path": "app-source/tests/126-p217b2-profile-chain.test.cjs",
+      "bytes": 8295,
+      "sha256": "82a1f78a4eaf60c7f58f8001b483d974011787910832add5265494909c07506e"
+    },
+    {
+      "path": "app-source/tests/126-p217b4-batch-contact.test.cjs",
+      "bytes": 18915,
+      "sha256": "000e65dbb550772394930eca63e106bfdf46bdacdbf5aaca730950f9f7f02ea2"
+    },
+    {
+      "path": "app-source/tests/128-discovery-readable-page.test.cjs",
+      "bytes": 15034,
+      "sha256": "6ebb56320da05e9e6e101b5d418dc2e8cb9550524072df484dc192a6ae7ea98c"
+    },
+    {
+      "path": "app-source/tests/129-nickname-identity.test.cjs",
+      "bytes": 15524,
+      "sha256": "76daccb9df93014b5a9e80ee8077ce1ecfe8c6ef89deacd5ff4e08a86e819957"
+    },
+    {
+      "path": "app-source/tests/13-context-blocks.test.cjs",
+      "bytes": 5507,
+      "sha256": "a94ee8bbb26d458009079bdbcdc592a4def7778c736fd85375fbf5fc8baf0f91"
+    },
+    {
+      "path": "app-source/tests/130-dm-title-hydration.test.cjs",
+      "bytes": 7928,
+      "sha256": "fd5af8d3ced1708087138a2dd2128fdf21b306e36f5893f106cc44c3b183f88f"
+    },
+    {
+      "path": "app-source/tests/131-account-id-first-identity.test.cjs",
+      "bytes": 12249,
+      "sha256": "8a30cdc4f92e2286585248de411ba92f52003fff4200b4cb633b9fd4354104f4"
+    },
+    {
+      "path": "app-source/tests/132-contact-stability.test.cjs",
+      "bytes": 7890,
+      "sha256": "55363b1b8ee77929c08e67ca4fd4ea7819a9a1ef30417c7d6cdf1db3d26e27f1"
+    },
+    {
+      "path": "app-source/tests/133-comment-panel-stability.test.cjs",
+      "bytes": 7896,
+      "sha256": "d85665c721c7de9c344615c979dc45c60cdfd24453b7ff1ad3a27916dd1cba39"
+    },
+    {
+      "path": "app-source/tests/134-verification-send-receipt.test.cjs",
+      "bytes": 12645,
+      "sha256": "7bfaf4250051a38a4072d541cc9d03a7cfe4487fc942707e22dfeb36fd9969ae"
+    },
+    {
+      "path": "app-source/tests/136-discovery-workspace.test.cjs",
+      "bytes": 16595,
+      "sha256": "36f35f2839de120639e1402e0e5563d2cac5bcf30b9000a3b08ccad289c1bf00"
+    },
+    {
+      "path": "app-source/tests/137-custom-discovery-goals.test.cjs",
+      "bytes": 14526,
+      "sha256": "d54f61f458089f992b7bd6d612d19dc7e8bfb9d305a156958bf1a1f7096a7c21"
+    },
+    {
+      "path": "app-source/tests/138-comment-opening-timing.test.cjs",
+      "bytes": 8373,
+      "sha256": "f02028b0b8b8f58428653fd8a103c12c5f51741d9073bb51aa5f5f75d621c701"
+    },
+    {
+      "path": "app-source/tests/139-comment-loading-budget.test.cjs",
+      "bytes": 8363,
+      "sha256": "3235c86938cdb377ea15474e7cbde7fa1b1371748dbf5fff644329171c1eac31"
+    },
+    {
+      "path": "app-source/tests/14-deepseek.test.cjs",
+      "bytes": 3375,
+      "sha256": "6288b69ceca86fb2a5fb9eef3239027f621b320815a17db90024824a7475b799"
+    },
+    {
+      "path": "app-source/tests/140-comment-reader-isolation.test.cjs",
+      "bytes": 11538,
+      "sha256": "18377affe7a1c292df6d3f70f184c52da4fe1b343f46bef521ae595e7261d643"
+    },
+    {
+      "path": "app-source/tests/141-video-comment-minimum.test.cjs",
+      "bytes": 7275,
+      "sha256": "a23edc902833ae6a3b82b2abea961b0d37ecc79804e8c8e07fe7d7d287f069b3"
+    },
+    {
+      "path": "app-source/tests/142-profile-reader.test.cjs",
+      "bytes": 9375,
+      "sha256": "7fff4aae0314148b70285669b9c0ada95f0db3e8e48b7722863b093838f93fe9"
+    },
+    {
+      "path": "app-source/tests/143-profile-unavailable.test.cjs",
+      "bytes": 3858,
+      "sha256": "93dfb29a2c7cbef350586d333386d77a54b41a0b12c87ea71cb0cd70bf3027ef"
+    },
+    {
+      "path": "app-source/tests/144-profile-lifecycle.test.cjs",
+      "bytes": 12154,
+      "sha256": "74441bc31185c8be7b8f8dbc07acc54eba29aad14d7a12a4e876accaf640db26"
+    },
+    {
+      "path": "app-source/tests/145-discovery-controls-age.test.cjs",
+      "bytes": 17779,
+      "sha256": "02bc09400f5797733bec26206e6dcdb8c94f8127180d2304a7937f4199caac05"
+    },
+    {
+      "path": "app-source/tests/146-runtime-performance.test.cjs",
+      "bytes": 18870,
+      "sha256": "3573103a8de79ee109e2b2665cdde277d8e150355f6503b826a9ee92f720c0e9"
+    },
+    {
+      "path": "app-source/tests/147-screening-reliability.test.cjs",
+      "bytes": 5357,
+      "sha256": "561e308d5fb883e0ba199d4e0e6926c7f30a8275da1cc7905d3f3111ce4cce60"
+    },
+    {
+      "path": "app-source/tests/148-gender-glyph.test.cjs",
+      "bytes": 2094,
+      "sha256": "dd8bc3ee34bf89d9fd8bc6dd0e5a2269cd9e3aafa64615a6915722600a8ab268"
+    },
+    {
+      "path": "app-source/tests/149-comment-batch-recall.test.cjs",
+      "bytes": 11955,
+      "sha256": "2ff722d0bc1fe06ef0d88b4c2f1ec3d575f60893a0887dbd6fd37c3ddbcb0f76"
+    },
+    {
+      "path": "app-source/tests/15-contact-name.test.cjs",
+      "bytes": 10248,
+      "sha256": "70ca8d3dc1e72d8a295f1b02e5c2564aaf991c80c776494a606df64c7bb9c715"
+    },
+    {
+      "path": "app-source/tests/150-cross-video-queue.test.cjs",
+      "bytes": 12090,
+      "sha256": "09282abc6284e2d738bacae54bac0e276b1af3d9885331d7b4dad6062bae0473"
+    },
+    {
+      "path": "app-source/tests/151-discovery-lists.test.cjs",
+      "bytes": 6821,
+      "sha256": "9bc2a5ba38c0148c7e95310958c4643e376e511934d3b804d448b8367ef1c84c"
+    },
+    {
+      "path": "app-source/tests/152-profile-navigation.test.cjs",
+      "bytes": 8820,
+      "sha256": "79839b7eebeca88a6487ec1cda80ecfeabce0bc4ada9c1d3bea8b03384b3e231"
+    },
+    {
+      "path": "app-source/tests/153-profile-fallback-adaptation.test.cjs",
+      "bytes": 5465,
+      "sha256": "d96cdca24dc8c97c87f32a8bfc5ffbd74bfee1c38c437519da34a67f65826ac6"
+    },
+    {
+      "path": "app-source/tests/154-reported-four-bugs.test.cjs",
+      "bytes": 9849,
+      "sha256": "d3a4e65149e2932b13652773fe53d5390f059c982654c5a947d07aecfbb706cc"
+    },
+    {
+      "path": "app-source/tests/155-profile-route-budgets.test.cjs",
+      "bytes": 11621,
+      "sha256": "35d6ca06784230af6c33ff35064b6dacd68c68bcbb9268310649745329789e0e"
+    },
+    {
+      "path": "app-source/tests/156-session-response-recovery.test.cjs",
+      "bytes": 6999,
+      "sha256": "48395b33a982549a1e579167cee1d353e7403db4425fc6f5f6801679bc2b48a1"
+    },
+    {
+      "path": "app-source/tests/157-discovery-main-frame-read.test.cjs",
+      "bytes": 2055,
+      "sha256": "d16b7deb386937b438642119d03ab66f32c173246a1a7a788ed2aa17a10493b2"
+    },
+    {
+      "path": "app-source/tests/158-ui-candidates-cache.test.cjs",
+      "bytes": 12387,
+      "sha256": "dd82a0d4bb1c9a61be847aa6dafdb14de47b3d199f9f565b7f3e9fa5eeb593c1"
+    },
+    {
+      "path": "app-source/tests/159-custom-formal-integration.test.cjs",
+      "bytes": 9004,
+      "sha256": "8c9fc308306293947a56f520fdb8df6677f501d32cb5f4eab4b5a561038428f5"
+    },
+    {
+      "path": "app-source/tests/16-example-source.test.cjs",
+      "bytes": 1003,
+      "sha256": "a9f16c4cd9188c8036cd69ddf1751a54b239c91a835219bcf4b0b9b97910d08e"
+    },
+    {
+      "path": "app-source/tests/160-opening-requirements.test.cjs",
+      "bytes": 11084,
+      "sha256": "0fe9a03da022b337eb571a33e70c2068d09d811ea2eb90338aa1e1220737d47e"
+    },
+    {
+      "path": "app-source/tests/161-responsive-search-companion.test.cjs",
+      "bytes": 16666,
+      "sha256": "2cc6103f81381ad8cf1c11a48eb929f6026f56188f3797b0af43b093a9b8bb3d"
+    },
+    {
+      "path": "app-source/tests/17-friendship.test.cjs",
+      "bytes": 18835,
+      "sha256": "3fca4cf5983ca861adece4cff61c10db29bc7d79de81bacbbf92be8d74a7650c"
+    },
+    {
+      "path": "app-source/tests/18-relationship-and-video.test.cjs",
+      "bytes": 16561,
+      "sha256": "daa8ae8fbdde479d304548abe5f49fa60e8a4518a62abede28ce852e983008a2"
+    },
+    {
+      "path": "app-source/tests/19-contact-limit.test.cjs",
+      "bytes": 2598,
+      "sha256": "aa2c8f7f45d84a613208fc0d08e1aa540d2114d0b129404ca4896d75c1279101"
+    },
+    {
+      "path": "app-source/tests/20-message-editor.test.cjs",
+      "bytes": 7159,
+      "sha256": "f58c1f1da4637ed2a836dc59e57a24a09c48b6316cd325b9a049560497d9dde0"
+    },
+    {
+      "path": "app-source/tests/21-video-two-messages.test.cjs",
+      "bytes": 4750,
+      "sha256": "64cc14a8bdab522c40ffbca7bf5065cb7581a38d1538c121ca4941bdb5909ab5"
+    },
+    {
+      "path": "app-source/tests/22-social-memory.test.cjs",
+      "bytes": 13697,
+      "sha256": "da2c51f24719d9153789d39f9f064c9931e5472bd75285bece3e2bc118d56e11"
+    },
+    {
+      "path": "app-source/tests/23-social-pipeline.test.cjs",
+      "bytes": 8951,
+      "sha256": "dbf96c0fe080636a1369249dbc4f66d8cffdbbf6070410df39c26a6403f41afa"
+    },
+    {
+      "path": "app-source/tests/24-event-followup.test.cjs",
+      "bytes": 21493,
+      "sha256": "b0e7cd1f223c681f37087864bb7cf88de05767a49d6186d20c8b009a77eac6fa"
+    },
+    {
+      "path": "app-source/tests/25-event-memory.test.cjs",
+      "bytes": 10350,
+      "sha256": "1047a45d5068aabc8054ff13e807d64effcc6486cf70e32fdd0856480b0771e5"
+    },
+    {
+      "path": "app-source/tests/26-auto-friendship.test.cjs",
+      "bytes": 18699,
+      "sha256": "9ec7061326e2725ae23e67779fe262e51aa40e7dab8bf80e40e81c71b3584eb2"
+    },
+    {
+      "path": "app-source/tests/27-auto-friendship-browser.test.cjs",
+      "bytes": 15192,
+      "sha256": "9a4b686e1ed64a37ac17342f59e0900ac883e623537b73cf940315d66f596268"
+    },
+    {
+      "path": "app-source/tests/28-auto-friendship-wiring.test.cjs",
+      "bytes": 18144,
+      "sha256": "ed25f481e4f5c9dfa1bbbc38be4fa8b460e0c2c57add57a3f7e484c12114d8bb"
+    },
+    {
+      "path": "app-source/tests/29-auto-friendship-replies.test.cjs",
+      "bytes": 11422,
+      "sha256": "0af02f4ac16349f48431fc50c864c9f91a605ee4c6bcfd5f89cf95a979e9725a"
+    },
+    {
+      "path": "app-source/tests/30-discovery-data.test.cjs",
+      "bytes": 14699,
+      "sha256": "054a9250a43a6f2c5ee9cf9c4fb1bb218bee823fd25ad339f7ab204ececa0f7b"
+    },
+    {
+      "path": "app-source/tests/31-discovery-ui.test.cjs",
+      "bytes": 17619,
+      "sha256": "e67d4737dadd8ab23cccdfaf594a5b5e2381ad6fc35a4ec604f373d5ff852279"
+    },
+    {
+      "path": "app-source/tests/32-discovery-wiring.test.cjs",
+      "bytes": 16699,
+      "sha256": "706bdab56918f41e97438bd0162bd9eab798bf7bc3cf94a4cec7014ca5b7dd05"
+    },
+    {
+      "path": "app-source/tests/33-discovery-engine.test.cjs",
+      "bytes": 19866,
+      "sha256": "792d4363410a53cdefdb300a967e8d168a85c2ad675fe6ab49887a0f691d1c9c"
+    },
+    {
+      "path": "app-source/tests/34-discovery-requirements.test.cjs",
+      "bytes": 11661,
+      "sha256": "c81f30e35c2657e0c9247bb9998a7c3b9e50ee8b1abf5a801f8659ea438f41ee"
+    },
+    {
+      "path": "app-source/tests/35-candidate-brain.test.cjs",
+      "bytes": 17456,
+      "sha256": "e9b56916f8615b8e20eafa94690026827a3b59badc266e4f0a3f8f31b0991612"
+    },
+    {
+      "path": "app-source/tests/36-contact-engine.test.cjs",
+      "bytes": 25982,
+      "sha256": "3b5b3f48524f9003faf4fabc95b97cb14ce02c5b5d6fed14730569ad39f44596"
+    },
+    {
+      "path": "app-source/tests/37-contact-pipeline-ui.test.cjs",
+      "bytes": 21808,
+      "sha256": "f8eaf865a9e48b31f49cd93936baac6d2eda582d8224ff095c11bfbb5810ffc7"
+    },
+    {
+      "path": "app-source/tests/38-contact-pipeline-wiring.test.cjs",
+      "bytes": 18090,
+      "sha256": "1e639750e1064a8b63ff03c98e7a6728400e926c83048b6883c9f21a2a0c5686"
+    },
+    {
+      "path": "app-source/tests/39-message-interpreter.test.cjs",
+      "bytes": 14331,
+      "sha256": "93aeba9c96fb72300afca5fe7aa467c31d0e5c66522ee313c88a6a4da2a34509"
+    },
+    {
+      "path": "app-source/tests/40-media-capture-and-skip.test.cjs",
+      "bytes": 18079,
+      "sha256": "7c3e62d3d4ad694c2367f07948b7923e5754cc8338b013526f0a986320fc21db"
+    },
+    {
+      "path": "app-source/tests/41-media-social-pipeline.test.cjs",
+      "bytes": 8901,
+      "sha256": "5be2ec411597e8e5a42237359f302a66c388c8dadc10ca5c6702a426bd01068e"
+    },
+    {
+      "path": "app-source/tests/42-media-context-memory.test.cjs",
+      "bytes": 13248,
+      "sha256": "6174ef5914cbe812156a6c437307a98384731984223d27f34b17129728bc46b2"
+    },
+    {
+      "path": "app-source/tests/43-social-behavior-planner.test.cjs",
+      "bytes": 11048,
+      "sha256": "29edf895bdc56f006c706b561265c9f7470beec54db6068fd3988d3be6ac6b39"
+    },
+    {
+      "path": "app-source/tests/44-conversation-attention.test.cjs",
+      "bytes": 15779,
+      "sha256": "74c36ec295c350b3c8ca1eaaf0678b356c9cc47ac74f4354caec0cd890265176"
+    },
+    {
+      "path": "app-source/tests/45-reply-retriever.test.cjs",
+      "bytes": 9209,
+      "sha256": "eae9c69f6dd4625f6f561bd388409614b8eea76971da00f2bebb893ba94a2120"
+    },
+    {
+      "path": "app-source/tests/46-reply-provenance.test.cjs",
+      "bytes": 5372,
+      "sha256": "8e9017e51f5a2d87760bc2413f1abec28c01d847f2a6aad12ec51de8848e6754"
+    },
+    {
+      "path": "app-source/tests/47-attention-pipeline.test.cjs",
+      "bytes": 10204,
+      "sha256": "88219ca209e18077a343617e2ca074e4256257c50c61a2a2c7b349eb000e15f0"
+    },
+    {
+      "path": "app-source/tests/48-attention-state.test.cjs",
+      "bytes": 4096,
+      "sha256": "2cd0f490881bf9c4bcbe4315b8b2668725c9d93dca3f2114ab9895b4a8ad863d"
+    },
+    {
+      "path": "app-source/tests/49-conversation-state.test.cjs",
+      "bytes": 15350,
+      "sha256": "973d855f21f350a88f91a088f84c1ff22c3fec9de8106d349af8e8ea9e8c41e6"
+    },
+    {
+      "path": "app-source/tests/50-conversation-momentum.test.cjs",
+      "bytes": 17680,
+      "sha256": "2ed04052f84750bd45512d66c52d51d7d563120d9bd5c1710d7b02c5d7830f6a"
+    },
+    {
+      "path": "app-source/tests/51-conversation-state-pipeline.test.cjs",
+      "bytes": 16171,
+      "sha256": "d2ff90a66f8bfaf01f4e6d6d58bf2a26cc6760089cce0ced95e1b3d9a22a6122"
+    },
+    {
+      "path": "app-source/tests/52-momentum-regressions.test.cjs",
+      "bytes": 4490,
+      "sha256": "59b4bb965a6d0c89c90315ebb33b6e18104dfbfe9ba5affd115020d8ce020967"
+    },
+    {
+      "path": "app-source/tests/53-conversation-buffer.test.cjs",
+      "bytes": 15410,
+      "sha256": "cd6411a1dfccbd7c91f8454dd7b7f2de27a7fb71a23856d5c5dc020e03e60337"
+    },
+    {
+      "path": "app-source/tests/54-burst-automation.test.cjs",
+      "bytes": 14869,
+      "sha256": "300908316a04aeb5877c7beb1b394323d5085f292db6921834ea919b2079631f"
+    },
+    {
+      "path": "app-source/tests/55-burst-ui.test.cjs",
+      "bytes": 9537,
+      "sha256": "55079403756bd22b3de2273527a50aff458914a96b6e99108d9b32b511d39482"
+    },
+    {
+      "path": "app-source/tests/56-burst-pipeline.test.cjs",
+      "bytes": 15982,
+      "sha256": "5e46e1b5f50a29138e2740cba712e7197b0708a179b7e7a0c38de4eca685f98a"
+    },
+    {
+      "path": "app-source/tests/57-burst-draft-ipc.test.cjs",
+      "bytes": 5675,
+      "sha256": "25e0642c093a1e42c608d52a9fcaf5ed43c89bed343b990395b7d8b957da54d0"
+    },
+    {
+      "path": "app-source/tests/58-sticker-expression-planner.test.cjs",
+      "bytes": 11279,
+      "sha256": "56bcc88144a09edde5ca67d3ea0065e7cb9e4367f69fa6160b8c7b3c832a9fda"
+    },
+    {
+      "path": "app-source/tests/59-sticker-ai-pipeline.test.cjs",
+      "bytes": 6551,
+      "sha256": "6401350f6789565265875218086eb8d22849bb13504e6ba2c67de026511f2c4f"
+    },
+    {
+      "path": "app-source/tests/60-sticker-sender.test.cjs",
+      "bytes": 8088,
+      "sha256": "6fdfb200794386daa6edefdef365c68fb4e83e117fd3c3d8f8cc35bcd52ea53e"
+    },
+    {
+      "path": "app-source/tests/61-expression-batch.test.cjs",
+      "bytes": 5430,
+      "sha256": "f65985ce78a1b2a33f1835854c932bfb7418b06207456f29c1c310c15243e001"
+    },
+    {
+      "path": "app-source/tests/62-expression-automation.test.cjs",
+      "bytes": 11974,
+      "sha256": "fc6270b3bbe4604f47c49befeea41a169bc5299578f1d9b88316686211c3d3a3"
+    },
+    {
+      "path": "app-source/tests/63-expression-ui-ipc.test.cjs",
+      "bytes": 9892,
+      "sha256": "6d4fd868e0a8175816fe7835907dfd0106e10008bb55235c91c3424bd362db3a"
+    },
+    {
+      "path": "app-source/tests/64-expression-frequency.test.cjs",
+      "bytes": 8419,
+      "sha256": "85e0fca7c1587023dc21e51aa5e8d7bceb35ead2106fdec9be8ec468c10844b7"
+    },
+    {
+      "path": "app-source/tests/65-sticker-live-identity.test.cjs",
+      "bytes": 2254,
+      "sha256": "6102f9d9aca730bb2321e267132a4f1d02ae511fc65eb11e7222d14322d57fb3"
+    },
+    {
+      "path": "app-source/tests/66-self-profile.test.cjs",
+      "bytes": 12363,
+      "sha256": "f7200e898e16b1b6826d530cb29096fd3d5adc8939d7c9c93c02d1a32b74b49e"
+    },
+    {
+      "path": "app-source/tests/67-disclosure-policy.test.cjs",
+      "bytes": 11489,
+      "sha256": "adbb1c1268fd00e2340e57305f0eebda90f0855c846ca50873aa44f1bb571b0e"
+    },
+    {
+      "path": "app-source/tests/68-adaptive-persona.test.cjs",
+      "bytes": 12038,
+      "sha256": "a052e693e198e9b89b6cd1e493244f6ac593e673ccfb8eac1381bb585f099b97"
+    },
+    {
+      "path": "app-source/tests/69-new-friend-context.test.cjs",
+      "bytes": 9229,
+      "sha256": "4814ad729f5356451821b9db971f474e47400fd854461a0d6710991a5a1bc25d"
+    },
+    {
+      "path": "app-source/tests/70-self-profile-pipeline.test.cjs",
+      "bytes": 15572,
+      "sha256": "77c401483beb8a65c2abbbc3aff98798a4b6d303cab286bffb62c4f61152da75"
+    },
+    {
+      "path": "app-source/tests/71-adaptive-planner.test.cjs",
+      "bytes": 17297,
+      "sha256": "e0b981dc2d3674f5674d3d9bddfa6d7893f11f36484337ff6e6348fcc66a5baa"
+    },
+    {
+      "path": "app-source/tests/72-self-profile-ui.test.cjs",
+      "bytes": 23105,
+      "sha256": "5452d384f2ce0db11cfad421d8d10cee918573bb70b3b0095e5a34ab861804c7"
+    },
+    {
+      "path": "app-source/tests/73-self-profile-ipc.test.cjs",
+      "bytes": 8876,
+      "sha256": "7b520b828aca2d29ada934c6798a5c5ca1821c8bfe6cc6e94659d039a62c3d36"
+    },
+    {
+      "path": "app-source/tests/74-self-profile-grade.test.cjs",
+      "bytes": 4192,
+      "sha256": "2784ab0c6536e9317ff865ad9f94acc16e5debc59f54a057747d2577394b72a0"
+    },
+    {
+      "path": "app-source/tests/75-self-profile-send.test.cjs",
+      "bytes": 11149,
+      "sha256": "e7c837511c8807d1d0a08c623c07e5de0bcd04fe299b29aae8263b2a74aa3fd8"
+    },
+    {
+      "path": "app-source/tests/76-relationship-journey.test.cjs",
+      "bytes": 22914,
+      "sha256": "b782190cb4be1fa7ac3554c4c7cfe78a5fea365df4cad201fc537cda0a789260"
+    },
+    {
+      "path": "app-source/tests/77-journey-pipeline.test.cjs",
+      "bytes": 23577,
+      "sha256": "3e9f8ebcd78058dbf84faf9719acde37d7e92177315b95868380e97fc20fa70d"
+    },
+    {
+      "path": "app-source/tests/78-journey-ui-storage.test.cjs",
+      "bytes": 14935,
+      "sha256": "8a961ce11b212fa5880ef767800fc292a98739b5f98525a7c46cd30a892d0905"
+    },
+    {
+      "path": "app-source/tests/79-shared-memory.test.cjs",
+      "bytes": 36350,
+      "sha256": "040a7997fb50c34d213f195d1e325483ca4c8baa78174f991418d3aeacab9e6b"
+    },
+    {
+      "path": "app-source/tests/80-shared-memory-pipeline.test.cjs",
+      "bytes": 21160,
+      "sha256": "b085aa89dee3d054252ca4aa5612ac738b966ccbf420ee6dadfdb0620e160db8"
+    },
+    {
+      "path": "app-source/tests/81-shared-memory-ui-storage.test.cjs",
+      "bytes": 17869,
+      "sha256": "c8b15fd2fd37c7fe8c2f418ef45ca11c9f1f4fa15cd72935c6e31b5dc9bd2192"
+    },
+    {
+      "path": "app-source/tests/82-shared-memory-ipc.test.cjs",
+      "bytes": 8962,
+      "sha256": "b32a89be26fd28712b64e565d734fa73f1f394cbab7d9477d196f2c1689031dd"
+    },
+    {
+      "path": "app-source/tests/84-advisor-invocation.test.cjs",
+      "bytes": 10619,
+      "sha256": "f943fbb1ba8d5c3e002eebb02b41199ca5fb4b64c704d7e1ddd73b60a48fcee4"
+    },
+    {
+      "path": "app-source/tests/85-chat-window-coordination.test.cjs",
+      "bytes": 16042,
+      "sha256": "2e14b790fb17439f472949808003f312a4ad5d3139e3f96607637a8724258ec1"
+    },
+    {
+      "path": "app-source/tests/86-conversation-sync.test.cjs",
+      "bytes": 19019,
+      "sha256": "82e3c6de791b8df253178d6a0322d3a6ab715221efdd4164b3d3f6b9968e7eaf"
+    },
+    {
+      "path": "app-source/tests/87-conversation-sync-integration.test.cjs",
+      "bytes": 21676,
+      "sha256": "d258b967ff87ca1be4c02eb01b8053ab84dc051ae01f8f12a31e459de929cf1d"
+    },
+    {
+      "path": "app-source/tests/88-conversation-sync-ui.test.cjs",
+      "bytes": 11398,
+      "sha256": "477710b913eb9166f4cd92713f78e356f3c4bee3c9757f13b36501ae11eb049e"
+    },
+    {
+      "path": "app-source/tests/89-conversation-sync-events.test.cjs",
+      "bytes": 7168,
+      "sha256": "60959bf122e4b4e373ce8b259dd66552c6b1c3ab425e17870a5086ec729a9e1c"
+    },
+    {
+      "path": "app-source/tests/90-conversation-sync-ipc-storage.test.cjs",
+      "bytes": 9087,
+      "sha256": "d71299cc1f90f6fde7cbce0196e23360581ecd6512515a9e50739cb4a1549bc6"
+    },
+    {
+      "path": "app-source/tests/91-active-chat-identity-stale-profile.test.cjs",
+      "bytes": 5273,
+      "sha256": "8c8bda5b05dd41ab9789b5cef72ecfe5fabdec16118e2920149f2e2acc41c8c1"
+    },
+    {
+      "path": "app-source/tests/92-burst-message-identity.test.cjs",
+      "bytes": 12451,
+      "sha256": "d0e9ec3d935085f891a2bbeeb96078041a7c00f732818c7211e7143392c583dd"
+    },
+    {
+      "path": "app-source/tests/93-worker-recovery.test.cjs",
+      "bytes": 19908,
+      "sha256": "72d15e550904040318f7f36d2ab3d44e77dfb0cb692abed41132a7f364e00041"
+    },
+    {
+      "path": "app-source/tests/94-contact-list-order.test.cjs",
+      "bytes": 10335,
+      "sha256": "3c95a14ca481cc2c2bc11da17fec10494194a13a6dd2712f8d10871b3abbbe82"
+    },
+    {
+      "path": "app-source/tests/95-navigation-policy.test.cjs",
+      "bytes": 4558,
+      "sha256": "546d19575a62b0e7e1de1cd189965488f767de33bad9f5b743dfa930ffa7120c"
+    },
+    {
+      "path": "app-source/tests/96-writer-placeholder.test.cjs",
+      "bytes": 4302,
+      "sha256": "06810bfd9c010024b124a57b30a787cedfddc327cab4b8199356c9302ffd826c"
+    },
+    {
+      "path": "app-source/tests/97-runtime-event-contract.test.cjs",
+      "bytes": 4066,
+      "sha256": "4c5f1b5cb94b3effb07c3a57fe1676ac74c8223a56f7cac10c8eefa1f47073ae"
+    },
+    {
+      "path": "app-source/tests/98-chat-engine-contracts.test.cjs",
+      "bytes": 14953,
+      "sha256": "626bf9e8ef9b7bbea745ddbe5032fc5d8b7c3a5f20643eb880ef14dacb499e89"
+    },
+    {
+      "path": "app-source/tests/99-core-effects.test.cjs",
+      "bytes": 10111,
+      "sha256": "c2cda890ecf37811fdc3708715e4b4685d821c891f7b5929f6848d0efee9df1e"
+    },
+    {
+      "path": "app-source/tests/electron-stub.cjs",
+      "bytes": 509,
+      "sha256": "76e7c91d16ef26ac6ef8c832cd3a7dbb296513d44255299befa023312bdda7ce"
+    },
+    {
+      "path": "app-source/tests/fixtures/p217b2/library.replay.json",
+      "bytes": 4587,
+      "sha256": "b7d243a6decad1ac28531801f736ab910a7d434bb5950790ba4798330fe0191d"
+    },
+    {
+      "path": "app-source/tests/fixtures/p217b2/pages.json",
+      "bytes": 2636,
+      "sha256": "afe9037f077de077d247f53fef05fdcc52ee3c51ebce76e9fb67ed13d14fd490"
+    },
+    {
+      "path": "app-source/tests/fixtures/v30-legacy-traces.json",
+      "bytes": 1109699,
+      "sha256": "1591baa138daf69d3706625e6e1a33401e7449276ceac6ee351233975ac37e8d"
+    },
+    {
+      "path": "app-source/tests/setup.cjs",
+      "bytes": 3137,
+      "sha256": "287f964c6b2c31a8113410f21efa1d717e177ddf396d9fc45c2b8a9977de7cf4"
+    },
+    {
+      "path": "docs/上游与许可.md",
+      "bytes": 1013,
+      "sha256": "17c46f7f7c0d2ae4f201259901b1cb11f992e313542b0a89b69bf670e5745cca"
+    },
+    {
+      "path": "docs/待办问题.md",
+      "bytes": 845,
+      "sha256": "b9c5896977e339bfc998908fc28b93025f2f5308e107c4ef56bf5faba9526d50"
+    },
+    {
+      "path": "docs/新手演示清单.md",
+      "bytes": 2729,
+      "sha256": "71c3a44c229199303e9c6217ef2f75e70c61f26dbc908a90e8f3724cc00db0b0"
+    },
+    {
+      "path": "docs/版本说明.md",
+      "bytes": 1957,
+      "sha256": "3a1229c4a0a81a21007a573d6c765c25417785ff54076c9714c4b4cece4c9823"
+    },
+    {
+      "path": "licenses/LICENSE.electron.txt",
+      "bytes": 1117,
+      "sha256": "fd8fba3293b11d24886743418bfb624de8c46f81772b60a7e1b08a029e24c5b9"
+    },
+    {
+      "path": "package.json",
+      "bytes": 455,
+      "sha256": "ea9f9f37f74ef9252588e2e7c87b364ee6e6ae2856a9b0d384644d1d35d9f56a"
+    },
+    {
+      "path": "release-checks.json",
+      "bytes": 1508,
+      "sha256": "473ef13fe502ec1df33d5acde9394bebd8efd51ce84ec0372f8d35bb6bfac111"
+    },
+    {
+      "path": "release-info.json",
+      "bytes": 23288,
+      "sha256": "5988a38eebe9b42c3fa680ef325c176850a5622f0fb70f200a48a890f711c488"
+    },
+    {
+      "path": "runtime.json",
+      "bytes": 516,
+      "sha256": "af1b62bb3a61f7f08e58a3ea99fe8b0c83d824f961a9e040271ed5cbc46c7424"
+    },
+    {
+      "path": "scripts/run-tests.cjs",
+      "bytes": 1665,
+      "sha256": "ddb66fa3846849a6ff450a0ce31ef2f68a362f7c56bd6417854a069e8d6b63f6"
+    },
+    {
+      "path": "scripts/start.ps1",
+      "bytes": 3917,
+      "sha256": "36db82145a4b1b6767bdca3fe070ce14e8b91b3c204e38df9b5dbd043b2d904f"
+    },
+    {
+      "path": "启动全自动找对象流水线.cmd",
+      "bytes": 136,
+      "sha256": "c76eba3772dbc32a1c831afdb438748f0aaeb720e83eb7a0310eb84337e68398"
+    },
+    {
+      "path": "启动聊天助手.cmd",
+      "bytes": 136,
+      "sha256": "c76eba3772dbc32a1c831afdb438748f0aaeb720e83eb7a0310eb84337e68398"
+    }
+  ]
+}

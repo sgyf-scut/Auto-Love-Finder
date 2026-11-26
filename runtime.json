@@ -1,0 +1,12 @@
+{
+  "version": "37.2.6",
+  "platform": "win32",
+  "architecture": "x64",
+  "filename": "electron-v37.2.6-win32-x64.zip",
+  "sha256": "f7732d90dc70b9c7415a06f97f47f1ad45af8d6d89f557f6b00cee613f9a508e",
+  "urls": [
+    "https://github.com/electron/electron/releases/download/v37.2.6/electron-v37.2.6-win32-x64.zip",
+    "https://npmmirror.com/mirrors/electron/37.2.6/electron-v37.2.6-win32-x64.zip"
+  ],
+  "checksumSource": "https://github.com/electron/electron/releases/download/v37.2.6/SHASUMS256.txt"
+}

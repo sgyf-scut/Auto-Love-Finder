@@ -1,0 +1,115 @@
+{
+  "_fixture": {
+    "name": "P2-17B.2 离线集成夹具 · 历史回放",
+    "nature": "脱敏历史数据（作者 ID/昵称/评论文本均已替换为占位值，非真实抖音用户）",
+    "readonly": true,
+    "note": "仅用于离线集成测试与界面验证；不含任何真实账号、真实私信或真实身份信息。"
+  },
+  "videos": [
+    {
+      "key": "v:id:7300000000000000001",
+      "video_id": "7300000000000000001",
+      "video_url": "https://www.douyin.com/video/7300000000000000001",
+      "title": "找对象搭子｜周末一起吃饭",
+      "source": "douyin_dom",
+      "classification": { "category": "friend_general", "confidence": 0.7 }
+    },
+    {
+      "key": "v:id:7300000000000000002",
+      "video_id": "7300000000000000002",
+      "video_url": "https://www.douyin.com/video/7300000000000000002",
+      "title": "今天的日常 vlog",
+      "source": "douyin_dom",
+      "classification": { "category": "irrelevant", "confidence": 0.8 }
+    },
+    {
+      "key": "v:id:7300000000000000003",
+      "video_id": "7300000000000000003",
+      "video_url": "https://www.douyin.com/video/7300000000000000003",
+      "title": "同城交友角",
+      "source": "douyin_dom",
+      "favoritesFolder": "交友素材",
+      "classification": { "category": "friend_local", "confidence": 0.7 }
+    },
+    {
+      "key": "v:id:7300000000000000004",
+      "video_id": "7300000000000000004",
+      "video_url": "https://www.douyin.com/video/7300000000000000004",
+      "title": "聊天搭子来",
+      "source": "douyin_dom",
+      "classification": { "category": "friend_chat", "confidence": 0.7 }
+    },
+    {
+      "key": "v:id:7300000000000000005",
+      "video_id": "7300000000000000005",
+      "video_url": "https://www.douyin.com/video/7300000000000000005",
+      "title": "交友帖",
+      "source": "douyin_dom",
+      "classification": { "category": "friend_general", "confidence": 0.7 }
+    }
+  ],
+  "comments": [
+    {
+      "key": "c:v:id:7300000000000000001:id:7490000000000000001",
+      "comment_id": "7490000000000000001",
+      "video_id": "7300000000000000001",
+      "video_url": "https://www.douyin.com/video/7300000000000000001",
+      "author_id": "SEC_OLD_0001",
+      "author_name": "历史甲",
+      "text": "想认识一下",
+      "created_at": "2026-10-01T10:00:00.000Z",
+      "collected_at": "2026-10-02T10:00:00.000Z",
+      "source": "douyin_dom",
+      "ip_location": "广东",
+      "ip_location_source": "footer_region",
+      "reply_count": 0,
+      "classification": { "intent": "SEEKING_FRIENDS", "confidence": 0.8, "reason": "明确想认识", "model": "fixture" }
+    },
+    {
+      "key": "c:v:id:7300000000000000001:id:7490000000000000002",
+      "comment_id": "7490000000000000002",
+      "video_id": "7300000000000000001",
+      "video_url": "https://www.douyin.com/video/7300000000000000001",
+      "author_id": "SEC_OLD_0002",
+      "author_name": "历史乙",
+      "text": "哈哈好看",
+      "created_at": "2026-10-01T11:00:00.000Z",
+      "collected_at": "2026-10-02T10:00:00.000Z",
+      "source": "douyin_dom",
+      "reply_count": 1,
+      "classification": { "intent": null, "confidence": null, "reason": "" }
+    },
+    {
+      "key": "c:v:id:7300000000000000003:id:7490000000000000003",
+      "comment_id": "7490000000000000003",
+      "video_id": "7300000000000000003",
+      "video_url": "https://www.douyin.com/video/7300000000000000003",
+      "author_id": "SEC_OLD_0003",
+      "author_name": "历史丙",
+      "text": "同城的有吗",
+      "created_at": "2026-10-01T12:00:00.000Z",
+      "collected_at": "2026-10-02T10:00:00.000Z",
+      "source": "douyin_dom",
+      "ip_location": "江苏",
+      "ip_location_source": "footer_region",
+      "reply_count": 4,
+      "classification": { "intent": "SEEKING_FRIENDS", "confidence": 0.75, "reason": "同城交友", "model": "fixture" }
+    },
+    {
+      "key": "c:v:id:7300000000000000004:id:7490000000000000004",
+      "comment_id": "7490000000000000004",
+      "video_id": "7300000000000000004",
+      "video_url": "https://www.douyin.com/video/7300000000000000004",
+      "author_id": "SEC_SYN_0004",
+      "author_name": "合成-戊",
+      "text": "想找个搭子",
+      "created_at": "2026-10-01T13:00:00.000Z",
+      "collected_at": "2026-10-02T10:00:00.000Z",
+      "source": "douyin_dom",
+      "ip_location": "广东",
+      "ip_location_source": "explicit_label",
+      "reply_count": 2,
+      "classification": { "intent": "SEEKING_FRIENDS", "confidence": 0.7, "reason": "找搭子", "model": "fixture" }
+    }
+  ]
+}

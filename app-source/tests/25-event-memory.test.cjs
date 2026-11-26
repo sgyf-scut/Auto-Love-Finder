@@ -1,0 +1,170 @@
+const { test } = require('node:test')
+const assert = require('node:assert/strict')
+const { syncMemory, eventFromMessage, normalizeEvent, advanceEventLifecycle, applyObservations, messageList } = require('../electron/social-brain/memory-manager.cjs')
+
+const start = '2026-10-10T12:00:00+08:00'
+const msg = (text, id = 'm1', at = start, role = 'contact') => ({ id, text, at, role })
+const contact = messages => ({ id: 'event-test', name: '虚拟事件对象', learning: { messages } })
+const collect = messages => syncMemory(contact(messages), { now: new Date(start) })
+
+test('afternoon interview records a bounded window after the afternoon interval and delay', () => {
+  const event = collect([msg('我明天下午面试')]).events[0]
+  assert.equal(event.dueDate, '2026-10-11')
+  assert.equal(event.eventAt, '2026-10-11')
+  assert.equal(event.followUpWindow.startAt, '2026-10-11T14:00:00.000Z') // 22:00 Shanghai
+  assert.equal(event.followUpAt, event.followUpWindow.startAt)
+  assert.equal(Date.parse(event.followUpWindow.endAt) - Date.parse(event.followUpAt), 30 * 3600000)
+  assert.equal(event.followUp.enabled, true)
+  assert.equal(event.followUp.attempts, 0)
+  assert.equal(event.confidence, 0.96)
+  assert.deepEqual(event.sourceMessageIds, ['m1'])
+  assert.equal(event.createdAt, new Date(start).toISOString())
+})
+test('a future afternoon result cannot become due the same morning', () => {
+  const event = eventFromMessage(msg('明天下午面试'))
+  assert.equal(advanceEventLifecycle([event], '2026-10-11T10:00:00+08:00')[0].status, 'upcoming')
+  assert.equal(advanceEventLifecycle([event], event.followUpAt)[0].status, 'due')
+})
+test('date-only events follow up the next day at a daytime hour', () => {
+  const event = eventFromMessage(msg('我下周一面试'))
+  assert.equal(event.dueDate, '2026-10-12')
+  assert.equal(event.followUp.notBefore, '2026-10-13')
+  assert.equal(event.followUpAt, '2026-10-13T02:00:00.000Z')
+})
+test('week-only events wait until the end of their range', () => {
+  const event = eventFromMessage(msg('我下周有面试'))
+  assert.equal(event.datePrecision, 'week')
+  assert.equal(event.dueDate, '2026-10-12')
+  assert.equal(event.dueEnd, '2026-10-18')
+  assert.equal(event.followUpAt, '2026-10-19T02:00:00.000Z')
+  assert.equal(advanceEventLifecycle([event], '2026-10-13T12:00:00+08:00')[0].status, 'upcoming')
+})
+test('natural results resolve the matching event and disable all follow-up', () => {
+  const memory = collect([msg('我明天面试'), msg('我刚面完，感觉凉了哈哈', 'm2', '2026-10-11T17:00:00+08:00')])
+  assert.equal(memory.events.length, 1)
+  assert.equal(memory.events[0].status, 'resolved')
+  assert.equal(memory.events[0].followUp.status, 'resolved_in_chat')
+  assert.equal(memory.events[0].followUp.enabled, false)
+  assert.equal(memory.events[0].followUpWindow, null)
+  assert.equal(memory.events[0].followUpAt, null)
+  assert.deepEqual(memory.events[0].sourceMessageIds, ['m1', 'm2'])
+})
+test('Friday rescheduling updates the same event and removes its earlier window', () => {
+  const first = collect([msg('明天答辩')]).events[0]
+  const memory = collect([msg('明天答辩'), msg('推迟到周五了', 'm2')])
+  assert.equal(memory.events.length, 1)
+  assert.equal(memory.events[0].id, first.id)
+  assert.equal(memory.events[0].dueDate, '2026-10-16')
+  assert.equal(memory.events[0].followUpAt, '2026-10-17T02:00:00.000Z')
+  assert.notEqual(memory.events[0].followUpAt, first.followUpAt)
+})
+test('contextual rescheduling to next week replaces the original exam range', () => {
+  const memory = collect([msg('明天考试'), msg('老师通知推迟到下周了', 'm2')])
+  assert.equal(memory.events.length, 1)
+  assert.equal(memory.events[0].type, 'exam')
+  assert.equal(memory.events[0].dueDate, '2026-10-12')
+  assert.equal(memory.events[0].dueEnd, '2026-10-18')
+  assert.equal(memory.events[0].followUpAt, '2026-10-19T02:00:00.000Z')
+})
+test('uncertain and missing historical dates are stored without invented schedules', () => {
+  for (const text of ['最近可能要面试', '我明天可能面试', '我最近准备面试']) {
+    const event = eventFromMessage(msg(text))
+    assert.ok(event)
+    assert.equal(event.status, 'undated')
+    assert.equal(event.dueDate, null)
+    assert.equal(event.followUp.enabled, false)
+    assert.equal(event.followUp.status, 'needs_date')
+    assert.equal(event.followUpWindow, null)
+  }
+  assert.equal(eventFromMessage(msg('我明天面试', 'historical', '')).dueDate, null)
+})
+test('cancellation disables a known event and cannot create a negative event', () => {
+  const memory = collect([msg('我明天面试'), msg('面试取消了', 'm2')])
+  assert.equal(memory.events.length, 1)
+  assert.equal(memory.events[0].status, 'cancelled')
+  assert.equal(memory.events[0].followUp.enabled, false)
+  assert.equal(eventFromMessage(msg('我明天不面试了')), null)
+})
+test('third party, owner and hypothetical event statements never become contact events', () => {
+  for (const message of [msg('我朋友明天面试'), msg('我室友明天考试'), msg('同事明天面试，我最近很忙'), msg('他说我明天面试'), msg('如果我明天面试'), msg('我明天面试', 'owner', start, 'me')]) {
+    assert.equal(eventFromMessage(message), null)
+  }
+  const memory = collect([msg('我明天面试'), msg('我朋友刚面完，感觉凉了', 'm2'), msg('她刚面完', 'm3')])
+  assert.equal(memory.events[0].status, 'upcoming')
+})
+test('an explicit minute is retained so the follow-up delay is not rounded earlier', () => {
+  const event = eventFromMessage(msg('我明天下午3:30面试'))
+  assert.equal(event.eventAt, '2026-10-11T07:30:00.000Z')
+  assert.equal(event.followUpAt, '2026-10-11T11:30:00.000Z')
+})
+test('ambiguous untyped event changes cannot target one of multiple events', () => {
+  const memory = collect([msg('我明天面试'), msg('我明天考试', 'm2'), msg('推迟到周五了', 'm3')])
+  assert.equal(memory.events.length, 2)
+  assert.ok(memory.events.every(e => e.dueDate === '2026-10-11'))
+})
+test('clarifying an undated event updates its ID instead of leaving duplicate tasks', () => {
+  const first = collect([msg('最近可能要面试')])
+  const memory = collect([msg('最近可能要面试'), msg('我下周一面试', 'm2')])
+  assert.equal(memory.events.length, 1)
+  assert.equal(memory.events[0].id, first.events[0].id)
+  assert.equal(memory.events[0].dueDate, '2026-10-12')
+})
+test('repeating the same appointment adds evidence without duplicate follow-up tasks', () => {
+  const first = collect([msg('我明天面试')]).events[0]
+  const memory = collect([msg('我明天面试'), msg('明天下午面试，有点紧张', 'm2')])
+  assert.equal(memory.events.length, 1)
+  assert.equal(memory.events[0].id, first.id)
+  assert.deepEqual(memory.events[0].sourceMessageIds, ['m1', 'm2'])
+  assert.equal(memory.events[0].followUpAt, '2026-10-11T14:00:00.000Z')
+})
+test('repeating a followed appointment cannot reopen its follow-up', () => {
+  const c = contact([msg('我明天面试')])
+  const first = syncMemory(c, { now: new Date(start) })
+  first.events[0].status = 'followed_up'
+  first.events[0].followUp = { ...first.events[0].followUp, enabled: false, status: 'followed_up', attempts: 1 }
+  const memory = syncMemory({ ...c, socialBrain: first, learning: { messages: [...c.learning.messages, msg('明天下午面试', 'm2')] } }, { now: new Date(start) })
+  assert.equal(memory.events.length, 1)
+  assert.equal(memory.events[0].status, 'followed_up')
+  assert.equal(memory.events[0].followUp.enabled, false)
+})
+test('unknown rescheduling clears the old schedule until a date is clarified', () => {
+  const memory = collect([msg('我明天面试'), msg('面试改期了，还没定', 'm2')])
+  assert.equal(memory.events.length, 1)
+  assert.equal(memory.events[0].status, 'undated')
+  assert.equal(memory.events[0].followUp.enabled, false)
+  assert.equal(memory.events[0].followUpWindow, null)
+})
+test('lifecycle expires a window without mutating supplied event objects', () => {
+  const event = eventFromMessage(msg('我明天面试'))
+  const saved = JSON.stringify(event)
+  const result = advanceEventLifecycle([event], '2026-11-01T12:00:00+08:00')
+  assert.equal(JSON.stringify(event), saved)
+  assert.notEqual(result[0], event)
+  assert.notEqual(result[0].followUp, event.followUp)
+  assert.equal(result[0].status, 'stale')
+  assert.equal(result[0].followUp.enabled, false)
+})
+test('normalization retains engine attempt states while migrating old date fields', () => {
+  const event = normalizeEvent({ id: 'old', type: 'exam', dueDate: '2026-10-11', followUp: { notBefore: '2026-10-12', status: 'uncertain', attempts: 2, lastAttemptAt: start, candidateId: 'draft1' } })
+  assert.equal(event.followUp.status, 'uncertain')
+  assert.equal(event.followUp.attempts, 2)
+  assert.equal(event.followUp.candidateId, 'draft1')
+  assert.equal(event.followUpAt, '2026-10-12T02:00:00.000Z')
+  assert.equal(event.followUp.lastAttemptAt, new Date(start).toISOString())
+})
+test('repeated synchronization cannot reopen a naturally resolved event', () => {
+  const c = contact([msg('我明天面试'), msg('我刚面完', 'm2', '2026-10-11T17:00:00+08:00')])
+  const first = syncMemory(c, { now: new Date(start) })
+  const again = syncMemory({ ...c, socialBrain: first }, { now: new Date(start) })
+  assert.deepEqual(again.events, first.events)
+})
+test('planner event operations require valid contact evidence and matching wording', () => {
+  const c = contact([msg('我明天面试'), msg('面试推迟到周五', 'm2'), msg('我刚面完', 'owner', start, 'me')])
+  const first = collect([c.learning.messages[0]])
+  const sources = messageList(c)
+  const invalid = applyObservations(first, { events: [{ operation: 'RESOLVE', evidence: '我刚面完', evidenceMessageId: 'owner' }, { operation: 'RESCHEDULE', evidence: '明天面试', evidenceMessageId: 'missing', eventAt: '2027-01-01' }] }, sources, new Date(start))
+  assert.equal(invalid.events[0].dueDate, '2026-10-11')
+  const updated = applyObservations(first, { events: [{ operation: 'RESCHEDULE', evidence: '面试推迟到周五', evidenceMessageId: 'm2', eventAt: '2027-01-01' }] }, sources, new Date(start))
+  assert.equal(updated.events[0].dueDate, '2026-10-16')
+  assert.equal(updated.events[0].id, first.events[0].id)
+})

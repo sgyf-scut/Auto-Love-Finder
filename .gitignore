@@ -1,0 +1,22 @@
+# Generated runtime, account data and local tests: never upload these.
+.runtime/
+.cache/
+data/
+staging/
+test-artifacts/
+node_modules/
+.git-sync/
+*.log
+*.tmp
+*.zip
+*.partial
+.env
+.env.*
+!.env.example
+*.pem
+*.pfx
+*.p12
+**/state.json
+**/providers.json
+**/accounts.json
+app-source/build-info.json
