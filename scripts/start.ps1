@@ -49,7 +49,7 @@ try {
         $arguments += '--remote-debugging-address=127.0.0.1'
         $arguments += ('--remote-debugging-port=' + $DiagnosticsPort)
     }
-    Write-Host '正在启动全自动找对象流水线……'
+    Write-Host '正在启动 Auto Love Finder……'
     $instance = Start-Process -FilePath $exe -ArgumentList $arguments -WorkingDirectory $root -WindowStyle Hidden -PassThru
     if ($DiagnosticsPort -gt 0) { Write-Output ('DIAGNOSTIC_PID=' + $instance.Id) }
 } catch {

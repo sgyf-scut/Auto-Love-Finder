@@ -1,9 +1,9 @@
 {
   "packageVersion": "0.1.0-preview.1",
-  "businessStage": "P2-18.24.1-brand-20261126",
+  "businessStage": "P2-18.24.2-auto-love-finder-20261126",
   "sourceCommit": "61de3b404aa074494e8a92a600b037578af579d8",
   "appFiles": 131,
-  "appManifestDigest": "4e7ffa834a780de1064c253ecd7b348a37f8ded54cb94883cea8953cfa6ff6ba",
+  "appManifestDigest": "8172aa45db35d426636629d048906e33219bc892246ec6a050476d47c106b590",
   "electronVersion": "37.2.6",
   "containsRuntimeBinaries": false,
   "containsUserData": false,
@@ -641,14 +641,17 @@
     "runtimePreparedInTarget": false,
     "realAccountAcceptance": "pending"
   },
-  "productName": "全自动找对象流水线",
+  "productName": "Auto Love Finder",
   "subtitle": "对象、搭子、同好、学长学姐——你定目标，AI 找人开聊。",
   "brandingChange": {
     "displayOnly": true,
     "dataDirectoryChanged": false,
     "oldLauncherRetained": false,
-    "newLauncher": "启动全自动找对象流水线.cmd",
+    "newLauncher": "启动Auto Love Finder.cmd",
     "isolatedUiPassed": true,
-    "singleLauncher": true
-  }
+    "singleLauncher": true,
+    "displayName": "Auto Love Finder"
+  },
+  "chineseName": "全自动找对象流水线",
+  "repository": "https://github.com/sgyf-scut/Auto-Love-Finder"
 }

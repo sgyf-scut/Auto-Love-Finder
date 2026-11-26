@@ -1,6 +1,6 @@
 {
   "date": "2026-11-26",
-  "productName": "全自动找对象流水线",
+  "productName": "Auto Love Finder",
   "fileCount": 312,
   "files": [
     {
@@ -15,8 +15,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7014,
-      "sha256": "b5c0bdda92393b5e7de3f8ddef509fb2d7f5ffacf89ee70bd07472d52b7376b1"
+      "bytes": 7022,
+      "sha256": "f3e4fcb613412de803740c6a5c6a7fa4dff8e370dec31897051bdd927dcc2ea8"
     },
     {
       "path": "app-source/dist/app-icon.png",
@@ -30,13 +30,13 @@
     },
     {
       "path": "app-source/dist/app.js",
-      "bytes": 466732,
-      "sha256": "48c946c32e87dbe60a7c1771396c8eb633f845764700742a1a1960159543f4ac"
+      "bytes": 466782,
+      "sha256": "5f371727bffdb0acb1ec6b07ed0f47689bd66ffca960674e467af0e4a8004d0e"
     },
     {
       "path": "app-source/dist/index.html",
-      "bytes": 480,
-      "sha256": "44518d504efd8d2e38b7b9eeb2cfce90863d9b6820b2038a28dcb1be1f9e7953"
+      "bytes": 499,
+      "sha256": "6b85ea4169d73f89e7d1f9960aefd2a9a410c391917a51b7d0c6a1f389337224"
     },
     {
       "path": "app-source/dist/tray-icon.png",
@@ -395,8 +395,8 @@
     },
     {
       "path": "app-source/electron/main.cjs",
-      "bytes": 177884,
-      "sha256": "db2912ad754eb1abf7b288c5c3fa0d5dea9bace5fd4c424f069b31b729ed7703"
+      "bytes": 177760,
+      "sha256": "0e46d8da82fcebf7ce5470fec103af10218cb4f91f42ee2819baa8748d5be84b"
     },
     {
       "path": "app-source/electron/manual-verification.cjs",
@@ -670,8 +670,8 @@
     },
     {
       "path": "app-source/package.json",
-      "bytes": 409,
-      "sha256": "2a3fdb2cf010c7195b43043e1c6f4e6b72a47bae59dcc10c4731f76f33992ed4"
+      "bytes": 447,
+      "sha256": "8eb1c6c03125037b0fd199c88d6c6de0e7679420134cd8780e75785f051c9fdc"
     },
     {
       "path": "app-source/scripts/build-info.cjs",
@@ -1520,8 +1520,8 @@
     },
     {
       "path": "docs/版本说明.md",
-      "bytes": 1966,
-      "sha256": "77c6b1c6eb2bf0b856d5d20122aa8dd26fa39409282e0523609f6b370b7249c7"
+      "bytes": 2289,
+      "sha256": "40681bb5b03fc0f03b9a1a18d4b43e42f31e10cc425b42ceea39b8d545e94f14"
     },
     {
       "path": "licenses/LICENSE.electron.txt",
@@ -1530,18 +1530,18 @@
     },
     {
       "path": "package.json",
-      "bytes": 455,
-      "sha256": "ea9f9f37f74ef9252588e2e7c87b364ee6e6ae2856a9b0d384644d1d35d9f56a"
+      "bytes": 493,
+      "sha256": "d240281460187f812f58472a8c6666c594c0b3b244fefc9b2f33e32f9bd14a58"
     },
     {
       "path": "release-checks.json",
-      "bytes": 1508,
-      "sha256": "473ef13fe502ec1df33d5acde9394bebd8efd51ce84ec0372f8d35bb6bfac111"
+      "bytes": 1525,
+      "sha256": "d4ce65ca49d78fe2a1125a22ae76c4f1f6e9466332cac810ff99e620a6415d6b"
     },
     {
       "path": "release-info.json",
-      "bytes": 23317,
-      "sha256": "ed3061b4e3a99b83d1a094fbe26c297ba98a1f73a5170571f0fc7c0f0aaf81a5"
+      "bytes": 23458,
+      "sha256": "35c82508557e121ee9ec864f98ed19fb1f6cb9be18918b2e7124c10fe0db553f"
     },
     {
       "path": "runtime.json",
@@ -1555,11 +1555,11 @@
     },
     {
       "path": "scripts/start.ps1",
-      "bytes": 3917,
-      "sha256": "36db82145a4b1b6767bdca3fe070ce14e8b91b3c204e38df9b5dbd043b2d904f"
+      "bytes": 3907,
+      "sha256": "e93f7e098df33e4aeb33c689a0b1cf944f663ef98476da6de7a672733877d087"
     },
     {
-      "path": "启动全自动找对象流水线.cmd",
+      "path": "启动Auto Love Finder.cmd",
       "bytes": 136,
       "sha256": "c76eba3772dbc32a1c831afdb438748f0aaeb720e83eb7a0310eb84337e68398"
     }

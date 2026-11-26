@@ -1,4 +1,4 @@
-# 全自动找对象流水线
+# Auto Love Finder｜全自动找对象流水线
 
 对象、搭子、同好、学长学姐——你定目标，AI 找人开聊。
 
@@ -25,7 +25,7 @@
 ## 第一次启动
 
 1. 下载并完整解压源码，保留整个目录结构。
-2. 双击根目录 **启动全自动找对象流水线.cmd**。首次会下载 Electron 37.2.6 并校验 SHA-256；无需另外安装 Node、Python 或 Git。需要 Windows 64 位、PowerShell 和可用网络。
+2. 双击根目录 **启动Auto Love Finder.cmd**。首次会下载 Electron 37.2.6 并校验 SHA-256；无需另外安装 Node、Python 或 Git。需要 Windows 64 位、PowerShell 和可用网络。
 3. 下载失败时会显示原因，可在网络恢复后重试。以后的启动使用本目录中的运行环境缓存。
 
 ## 从空白开始配置

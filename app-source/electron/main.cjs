@@ -156,7 +156,7 @@ function createWindow() {
     minHeight: 640,
     backgroundColor: nativeTheme.shouldUseDarkColors ? '#202020' : '#f3f3f3',
     icon: assetPath('app-icon.png'),
-    title: '全自动找对象流水线',
+    title: 'Auto Love Finder｜全自动找对象流水线',
     autoHideMenuBar: true,
     show: !shouldStartHidden,
     webPreferences: {
@@ -214,7 +214,7 @@ function notifyAutomationEvent(event, accountId = activeAccount) {
   const type = String(event.payload?.type || '')
   if (type === 'verification_required' || type === 'verification_cleared') {
     new Notification({
-      title: type === 'verification_required' ? '全自动找对象流水线需要人工验证' : '全自动找对象流水线验证已通过',
+      title: type === 'verification_required' ? 'Auto Love Finder需要人工验证' : 'Auto Love Finder验证已通过',
       body: event.payload?.message || (type === 'verification_required' ? '请在登录窗口完成安全验证，自动回复已暂停' : '自动回复已恢复'),
       silent: false,
     }).show()
@@ -225,8 +225,8 @@ function notifyAutomationEvent(event, accountId = activeAccount) {
   if ((failed && settings.notifyOnFailure === false) || (succeeded && settings.notifyOnSuccess === false)) return
   if (!failed && !succeeded) return
   new Notification({
-    title: failed ? '全自动找对象流水线任务失败' : '全自动找对象流水线任务完成',
-    body: event.payload?.message || (failed ? '请打开全自动找对象流水线查看失败原因' : '任务已执行完成'),
+    title: failed ? 'Auto Love Finder任务失败' : 'Auto Love Finder任务完成',
+    body: event.payload?.message || (failed ? '请打开Auto Love Finder查看失败原因' : '任务已执行完成'),
     silent: !settings.soundNotifications,
   }).show()
 }
@@ -236,9 +236,9 @@ function createTray() {
     const icon = imageOrFallback('tray-icon.png', 'app-icon.png')
     const resized = icon.isEmpty() ? nativeImage.createEmpty() : icon.resize({ width: 16, height: 16 })
     tray = new Tray(resized)
-    tray.setToolTip('全自动找对象流水线')
+    tray.setToolTip('Auto Love Finder')
     tray.setContextMenu(Menu.buildFromTemplate([
-      { label: '显示全自动找对象流水线', click: () => showMainWindow() },
+      { label: '显示Auto Love Finder', click: () => showMainWindow() },
       { type: 'separator' },
       { label: '退出', click: () => { isQuitting = true; app.quit() } },
     ]))
@@ -255,7 +255,7 @@ function createTray() {
 }
 
 ipcMain.handle('app:info', () => ({
-  name: '全自动找对象流水线',
+  name: 'Auto Love Finder',
   version: app.getVersion(),
   platform: process.platform,
 }))
@@ -275,7 +275,7 @@ ipcMain.handle('app:open-external', (_event, url) => {
 
 function getDouyinService() {
   const svc = getActiveServices()
-  if (!svc?.douyin) throw new Error('抖音登录服务尚未初始化，请重启全自动找对象流水线')
+  if (!svc?.douyin) throw new Error('抖音登录服务尚未初始化，请重启Auto Love Finder')
   return svc.douyin
 }
 
@@ -936,7 +936,7 @@ ipcMain.handle('accounts:active-state', () => ({ active: activeAccount, state: g
 
 ipcMain.handle('automation:get-state', () => {
   const entry = getActiveServices()
-  if (!entry) throw new Error('本机配置尚未加载，请重启全自动找对象流水线')
+  if (!entry) throw new Error('本机配置尚未加载，请重启Auto Love Finder')
   return entry.storage.get()
 })
 ipcMain.handle('automation:update', (_event, config) => {
@@ -1187,7 +1187,7 @@ function registerAiHandlers() {
   // 训练场：用户示范自己的回复方式，AI 学习（样例 + 风格统计 + 对话历史）
   ipcMain.handle('train:learn', guarded(async (payload) => {
     const entry = getActiveServices()
-    if (!entry) throw new Error('本机配置尚未加载，请重启全自动找对象流水线')
+    if (!entry) throw new Error('本机配置尚未加载，请重启Auto Love Finder')
     const name = String(payload?.name || '').trim()
     if (!name) throw new Error('缺少训练对象名称')
     // 训练对象不存在时先创建（虚拟联系人，不影响真实联系人）
@@ -1233,7 +1233,7 @@ function registerAiHandlers() {
   // 供任务页预览与对话理解基准（spark-sim）驱动。
   ipcMain.handle('ai:draft-spark', guarded(async (payload) => {
     const entry = getActiveServices()
-    if (!entry) throw new Error('本机配置尚未加载，请重启全自动找对象流水线')
+    if (!entry) throw new Error('本机配置尚未加载，请重启Auto Love Finder')
     const name = String(payload?.name || '').trim()
     if (!name) throw new Error('缺少联系人名称')
     const state = entry.storage.get()
@@ -2832,7 +2832,7 @@ app.whenReady().then(() => {
     }
   }
 
-  getActiveStorage()?.addLog?.({ type: 'app_boot', message: `全自动找对象流水线 v${app.getVersion()} 已启动`, detail: { version: app.getVersion() } })
+  getActiveStorage()?.addLog?.({ type: 'app_boot', message: `Auto Love Finder v${app.getVersion()} 已启动`, detail: { version: app.getVersion() } })
   registerAiHandlers()
   if (process.env.DOUYIN_ASSISTANT_DEV_TOOLS === '1' && fs.existsSync(path.join(__dirname, 'dev-ipc.cjs'))) {
     require('./dev-ipc.cjs').registerDevHandlers({ ipcMain, app, getActiveServices, getActiveAccount: () => activeAccount })

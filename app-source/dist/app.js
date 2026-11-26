@@ -133,7 +133,7 @@ function render() {
   document.getElementById('app').innerHTML = `
     <div class="layout">
       <div class="rail">
-        <div class="rail-brand">全自动找对象流水线<small>v${esc(S.info?.version || '')}</small></div>
+        <div class="rail-brand">Auto Love Finder<small>全自动找对象流水线</small><small>v${esc(S.info?.version || '')}</small></div>
         <div class="rail-nav">
           ${navItems.map(([key, label]) => `<button class="rail-item ${S.section === key ? 'active' : ''}" data-act="nav" data-args="${esc(JSON.stringify({ section: key }))}"><span>${label}</span></button>`).join('')}
         </div>
@@ -3710,7 +3710,7 @@ function settingsView() {
     <div class="panel">
       <h3>关于</h3>
       <div class="muted">
-        全自动找对象流水线 v${esc(S.info?.version || '')} · Electron ${esc(S.info?.version || '')}<br/>
+        Auto Love Finder｜全自动找对象流水线 v${esc(S.info?.version || '')} · Electron ${esc(S.info?.version || '')}<br/>
         配置和聊天记忆保存在本机；生成回复时，相关对话和媒体会发送到你配置的模型接口。<br/>
         <button class="btn small" data-act="check-update" style="margin-top:8px">检查更新</button>
       </div>

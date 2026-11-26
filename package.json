@@ -2,7 +2,7 @@
   "name": "douyin-social-assistant",
   "version": "0.1.0-preview.1",
   "private": true,
-  "description": "对象、搭子、同好、学长学姐——你定目标，AI 找人开聊。",
+  "description": "Auto Love Finder｜全自动找对象流水线。对象、搭子、同好、学长学姐——你定目标，AI 找人开聊。",
   "license": "UNLICENSED",
   "engines": {
     "node": ">=22"
@@ -11,5 +11,5 @@
     "start": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/start.ps1",
     "test": "node scripts/run-tests.cjs"
   },
-  "productName": "全自动找对象流水线"
+  "productName": "Auto Love Finder"
 }

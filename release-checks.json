@@ -45,11 +45,11 @@
   "runtimeChecksumConfigUnchanged": true,
   "accountDataIncluded": false,
   "runtimeBinariesIncluded": false,
-  "gitBranch": "release/preview-2026-11-26",
+  "gitBranch": "main",
   "publicRedistributionPermissionConfirmed": false,
   "nameChangeChecks": {
     "date": "2026-11-26",
-    "productName": "全自动找对象流水线",
+    "productName": "Auto Love Finder",
     "syntaxPassed": true,
     "emptyStartupPassed": true,
     "pagesChecked": 8,
@@ -58,6 +58,7 @@
     "dataDirectoryUnchanged": true,
     "logicChanged": false,
     "fullSuiteRerun": false,
-    "baselineTestsPassed": 2963
+    "baselineTestsPassed": 2963,
+    "chineseName": "全自动找对象流水线"
   }
 }
